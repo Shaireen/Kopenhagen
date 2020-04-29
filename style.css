@@ -9,7 +9,7 @@
 
     .nav-wrapper {
         max-width: 1200px;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         display: grid;
@@ -39,9 +39,10 @@
         max-width: 100%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat (3, 1fr);
+        grid-template-columns: repeat (3, 2fr);
 
         grid-template-areas:
+            "headerImages headerImages headerImages"
             "featuredMainCon featuredMainCon asideAds"
 
     }
@@ -53,6 +54,12 @@
         background-color: darkcyan;
         padding: 30px;
     }
+
+.head-imgs {
+    grid-area: headerImages;
+    margin: auto;
+    background-color: dodgerblue;
+}
 
     .aside-ads {
         grid-area: asideAds;
@@ -108,13 +115,17 @@
                margin-top: 0;
         }
 
+        .nav-wrapper {
+            padding-bottom: 30px;
+        }
+
         .nav-items {
             grid-column: 1/5;
             text-align: center;
             margin: 0;
             padding: 0;
             position: relative;
-            bottom: 80%;
+            bottom: 0%;
         }
 
         .nav-logo {
@@ -136,14 +147,19 @@
         grid-column: 1/5;
         text-align: center;
           position: relative;
-            bottom: 60%;
+            bottom: 0%;
     }
 
+
+    .nav-wrapper {
+         padding-bottom: px;
+    }
 
      .nav-wrapper ul li {
         display: block;
+         padding: 10px;
+            }
 
-    }
     .aside-ads {
       grid-template-columns: 1fr;
         margin-top: 0;
