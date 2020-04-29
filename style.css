@@ -1,6 +1,10 @@
 body {
     box-sizing: border-box;
+    background-image: url(Images-2/AdobeStock_303323553.jpeg);
 }
+
+
+
 
 
 ul {
@@ -20,4 +24,10 @@ li {
 
 #frontimg {
     width: 100%;
+}
+
+.Featuredbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    grid-gap: 2px;
 }
