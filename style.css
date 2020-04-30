@@ -101,13 +101,18 @@
 
 
 
-    /*tablet media quieres*/
+    /*tablet media quiery*/
 
     @media screen and (max-width: 950px) {
         .wrapper {
+            grid-template-columns: repeat (3, 2fr);
             grid-template-areas:
                 "featuredMainCon featuredMainCon featuredMainCon"
                 "asideAds asideAds asideAds"
+        }
+
+        .head-imgs {
+            display: none;
         }
 
         .aside-ads {
@@ -138,6 +143,11 @@
 /*mobile*/
 
 @media screen and (max-width: 690px){
+
+    body {
+        margin: 0px;
+    }
+
     .nav-logo {
             grid-column: 1/5;
             text-align: center;
@@ -159,6 +169,10 @@
         display: block;
          padding: 10px;
             }
+
+    .head-imgs {
+            display: none;
+        }
 
     .aside-ads {
       grid-template-columns: 1fr;
