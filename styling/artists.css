@@ -109,17 +109,41 @@
  .selected-artist-grid,
  .artists-sorting-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
  }
 
  .one-artist {
      margin: 0 30px 0 0;
-     min-height: 200px;
+     position: relative;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     font-size: 25px;
 
  }
 
  .one-artist img {
      max-width: 100%;
+     transition: .5s ease-in-out all;
+ }
+
+ .one-artist:hover img {
+     opacity: 0.5;
+ }
+
+ .one-artist:hover > p {
+     opacity: 1;
+ }
+
+ .one-artist > p {
+     position: absolute;
+     top: 0;
+     padding: 20px;
+     opacity: 0;
+ }
+
+ .one-artist p:nth-child(2) {
+     top: 30%;
  }
 
  /* selected artist styling */
@@ -146,7 +170,7 @@
      margin: 0;
      display: grid;
      grid-template-rows: auto;
-     padding: 20% 3%;
+     padding: 0 3% 20% 3%;
      font-family: source-sans-pro, sans-serif;
      font-weight: 300;
      font-style: normal;
@@ -154,6 +178,9 @@
      line-height: 1.1;
  }
 
+.selected-artist-text > p {
+    padding: 10px;
+}
  .artist-name,
  .artist-contact {
      font-weight: 600;
