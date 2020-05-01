@@ -15,12 +15,12 @@
         <div class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></div>
         <!--<div class="nav-logo ico"><img src="../images/TRANSPARENT-SQR-BLK.png"></div>-->
 
-            <a href="../index.html">HOME</a>
-            <a href="events.html">EVENTS</a>
-            <a href="galleries.html">GALLERIES</a>
-            <a href="artists.html">ARISTS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="../index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="galleries.html">GALLERIES</a>
+        <a href="artists.html">ARISTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
 
@@ -34,14 +34,15 @@
                 <article class="featured-artists">
                     <h1 class="featured-artists-heading">OUR FEATURED ARTISTS</h1>
                     <div class="featured-artists-grid">
-                       <template class="featured-artists-template">
-                        <div class="one-artist">
-                            <img src="">
-                            <p class="artist-style">Artwork: <span></span></p>
-                            <p class="artist-name">ARTIST NAME</p>
+                        <template class="featured-artists-template">
+                            <div class="one-artist">
+                                <img src="">
+                                <p class="artist-style">Artwork: <span></span></p>
+                                <p class="artist-name">ARTIST NAME</p>
 
-                           </div></template>
-                   <!--     <div class="one-artist"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
+                            </div>
+                        </template>
+                        <!--     <div class="one-artist"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
                             <p class="artist-style">Art style</p>
                             <p class="artist-name">ARTIST NAME</p>
                         </div>
@@ -55,22 +56,22 @@
                 </article>
 
                 <article class="selected-artist">
-                   <template class="selected-artist-template">
-                    <div class="selected-artist-grid">
+                    <template class="selected-artist-template">
+                        <div class="selected-artist-grid">
 
-                        <div class="selected-artist-photo">
-                            <img src="">
+                            <div class="selected-artist-photo">
+                                <img src="">
+
+                            </div>
+                            <div class="selected-artist-text">
+                                <p class="artist-name">ARTIST NAME</p>
+                                <p class="artist-style">Artwork: <span></span></p>
+                                <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                                <p class="artist-contact">Contact: <span></span></p>
+
+                            </div>
 
                         </div>
-                        <div class="selected-artist-text">
-                            <p class="artist-name">ARTIST NAME</p>
-                            <p class="artist-style">Artwork: <span></span></p>
-                            <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
-                            <p class="artist-contact">Contact: <span></span></p>
-
-                        </div>
-
-                    </div>
                     </template>
 
                 </article>
@@ -79,40 +80,52 @@
                 <article class="alphabet-sorting-artist">
                     <h2 class="all-artists-heading">ALL ARTISTS</h2>
                     <div class="alphabet-list">
-                        <button>A</button>
-                        <button>B</button>
-                        <button>C</button>
-                        <button>D</button>
-                        <button>E</button>
-                        <button>F</button>
-                        <button>G</button>
-                        <button>H</button>
-                        <button>I</button>
-                        <button>J</button>
-                        <button>K</button>
-                        <button>L</button>
-                        <button>M</button>
-                        <button>N</button>
-                        <button>O</button>
-                        <button>P</button>
-                        <button>Q</button>
-                        <button>R</button>
-                        <button>S</button>
-                        <button>T</button>
-                        <button>U</button>
-                        <button>V</button>
-                        <button>W</button>
-                        <button>X</button>
-                        <button>Y</button>
-                        <button>Z</button>
-                        <button>Æ</button>
-                        <button>Ø</button>
-                        <button>Å</button>
+                        <button class="all">ALL</button>
+                        <button data-filter="A" class="alphabet-filter-button">A</button>
+                        <button data-filter="B" class="alphabet-filter-button">B</button>
+                        <button data-filter="C" class="alphabet-filter-button">C</button>
+                        <button data-filter="D" class="alphabet-filter-button">D</button>
+                        <button data-filter="E" class="alphabet-filter-button">E</button>
+                        <button data-filter="F" class="alphabet-filter-button">F</button>
+                        <button data-filter="G" class="alphabet-filter-button">G</button>
+                        <button data-filter="H" class="alphabet-filter-button">H</button>
+                        <button data-filter="I" class="alphabet-filter-button">I</button>
+                        <button data-filter="J" class="alphabet-filter-button">J</button>
+                        <button data-filter="K" class="alphabet-filter-button">K</button>
+                        <button data-filter="L" class="alphabet-filter-button">L</button>
+                        <button data-filter="M" class="alphabet-filter-button">M</button>
+                        <button data-filter="N" class="alphabet-filter-button">N</button>
+                        <button data-filter="O" class="alphabet-filter-button">O</button>
+                        <button data-filter="P" class="alphabet-filter-button">P</button>
+                        <button data-filter="Q" class="alphabet-filter-button">Q</button>
+                        <button data-filter="R" class="alphabet-filter-button">R</button>
+                        <button data-filter="S" class="alphabet-filter-button">S</button>
+                        <button data-filter="T" class="alphabet-filter-button">T</button>
+                        <button data-filter="U" class="alphabet-filter-button">U</button>
+                        <button data-filter="V" class="alphabet-filter-button">V</button>
+                        <button data-filter="W" class="alphabet-filter-button">W</button>
+                        <button data-filter="X" class="alphabet-filter-button">X</button>
+                        <button data-filter="Y" class="alphabet-filter-button">Y</button>
+                        <button data-filter="Z" class="alphabet-filter-button">Z</button>
+                        <button data-filter="Æ" class="alphabet-filter-button">Æ</button>
+                        <button data-filter="Ø" class="alphabet-filter-button">Ø</button>
+                        <button data-filter="Å" class="alphabet-filter-button">Å</button>
 
                     </div>
                     <h2 class="artist-specific-letter-heading">ARTISTS "A"</h2>
                     <div class="artists-sorting-grid">
+                       <template class="artist-alphabet-template">
                         <div class="one-artist-alphabet">
+                            <div class="artist-photo">
+                                <img src="">
+                            </div>
+                            <p class="artist-name">Artist Name</p>
+                            <p class="artist-style">Artwork: <span></span></p>
+                            <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                            <p class="artist-contact">Contact: <span></span></p>
+                        </div>
+                        </template>
+                     <!--   <div class="one-artist-alphabet">
                             <div class="artist-photo">
                                 <img src="../images/grayscale-photo-of-man-s-face-1551446.jpg">
                             </div>
@@ -129,16 +142,7 @@
                             <p class="artist-style">Art style</p>
                             <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
                             <p class="artist-contact">Contact the artist hehe</p>
-                        </div>
-                        <div class="one-artist-alphabet">
-                            <div class="artist-photo">
-                                <img src="../images/grayscale-photo-of-man-s-face-1551446.jpg">
-                            </div>
-                            <p class="artist-name">Artist Name</p>
-                            <p class="artist-style">Art style</p>
-                            <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
-                            <p class="artist-contact">Contact the artist hehe</p>
-                        </div>
+                        </div>-->
 
                     </div>
                 </article>

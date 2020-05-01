@@ -135,12 +135,15 @@
  }
 
  .featured-artists-grid,
- .selected-artist-grid,
- .artists-sorting-grid {
+ .selected-artist-grid {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
  }
 
+ .artists-sorting-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(270px, 490px));
+ }
  .one-artist {
      margin: 0 30px 0 0;
      position: relative;
@@ -200,8 +203,7 @@
 
  /* selected artist styling */
  .selected-artist {
-     margin: 40px 30px 40px 0;
-     padding-bottom: 50px;
+     margin: 10px;
 
  }
 
@@ -222,12 +224,12 @@
      max-width: 100%;
  }
 
- .selected-artist-text {
+ .selected-artist-text{
 
      margin: 0;
      display: grid;
      grid-template-rows: auto;
-     padding: 0 3% 20% 3%;
+     padding: 10% 3% 20% 3%;
      font-family: source-sans-pro, sans-serif;
      font-weight: 300;
      font-style: normal;
@@ -261,9 +263,18 @@
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
      font-size: 20px;
+     transition: all .5s;
 
  }
 
+
+.alphabet-list > button:hover {
+    color: #e75d40;
+}
+
+.alphabet-list > button:focus {
+    outline: none;
+}
  .all-artists-heading {
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
@@ -278,13 +289,13 @@
  .one-artist-alphabet {
      min-height: 300px;
      background-color: #f8f8f8;
-     margin: 20px 20px 0 0;
+     margin: 10px;
      display: grid;
      grid-template-rows: auto;
      font-family: source-sans-pro, sans-serif;
      font-weight: 300;
      font-style: normal;
-     font-size: 25px;
+     font-size: 20px;
      line-height: 1.1;
  }
 
@@ -404,6 +415,7 @@
 
      .one-artist-alphabet {
          margin: 10px;
+
      }
 
      .nav-wrapper div:first-child {
@@ -477,6 +489,15 @@
 
      .nav-wrapper.responsive a.icon {
          padding-right: 25px;
+     }
+
+     .one-artist {
+         font-size: 20px;
+     }
+
+     .one-artist > button {
+         top: 68%;
+         padding: 5px;
      }
  }
 

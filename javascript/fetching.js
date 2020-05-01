@@ -1,3 +1,5 @@
+/*Fetching the data for all artists*/
+
 const artistsLink = "http://designhavn.dk/3Wordpress/wp-json/wp/v2/artist?_embed";
 fetch(artistsLink)
    .then(function (response) {
@@ -18,6 +20,7 @@ function showData(showArtists) {
     function showOneArtist(oneArtist) {
         const templateFeaturedArtists = document.querySelector(".featured-artists-template").content;
         clone = templateFeaturedArtists.cloneNode(true);
+        /* featured artists section */
         if (oneArtist.featured == "yes") {
         clone.querySelector(".one-artist .artist-style span").textContent = oneArtist.art_style;
         clone.querySelector(".one-artist .artist-name").textContent = oneArtist.artist_name;
@@ -28,6 +31,7 @@ function showData(showArtists) {
         buttonRead.textContent = "Read more...";
         clone.querySelector(".one-artist").appendChild(buttonRead);
         document.querySelector(".featured-artists-grid").appendChild(clone);
+        }
 
 
    /*          const templateSelectedArtist2 = document.querySelector(".selected-artist-template2").content;
@@ -38,12 +42,13 @@ function showData(showArtists) {
         }
            */
 
+        /*selected artists - hidden by default */
+
         const templateSelectedArtist = document.querySelector(".selected-artist-template").content;
         const clone2 = templateSelectedArtist.cloneNode(true);
         if (oneArtist.featured == "yes") {
         clone2.querySelector(".selected-artist-grid .selected-artist-photo img").src = oneArtist._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
         clone2.querySelector(".selected-artist-text .artist-name").textContent = oneArtist.artist_name;
-        /*clone2.querySelector(".selected-artist .selected-artist-heading").textContent = oneArtist.artist_name;*/
         clone2.querySelector(".selected-artist-text .artist-style span").textContent = oneArtist.art_style;
         clone2.querySelector(".selected-artist-text .artist-description").textContent = oneArtist.short_description;
         clone2.querySelector(".selected-artist-text .artist-contact span").textContent = oneArtist["e-mail"];
@@ -53,10 +58,26 @@ function showData(showArtists) {
         }
 
 
+        const templateAlphabetArtist = document.querySelector(".artist-alphabet-template").content;
+        const clone3 = templateAlphabetArtist.cloneNode(true);
+        clone3.querySelector(".one-artist-alphabet .artist-photo img").src = oneArtist._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+        clone3.querySelector(".one-artist-alphabet .artist-name").textContent = oneArtist.artist_name;
+        clone3.querySelector(".artist-style span").textContent = oneArtist.art_style;
+        clone3.querySelector(".one-artist-alphabet .artist-description").textContent = oneArtist.short_description;
+        clone3.querySelector(".one-artist-alphabet .artist-contact span").textContent = oneArtist["e-mail"];
+        const firstLetter = oneArtist.artist_name.charAt(0);
+        console.log(firstLetter);
+        clone3.querySelector(".one-artist-alphabet").classList.add(firstLetter);
+        document.querySelector(".artists-sorting-grid").appendChild(clone3);
+
+
+
         }
 
-    }
 
+
+
+/* functions for showing the selected artist */
 
 document.querySelectorAll('.featured-artist-button').forEach(button => {
     button.addEventListener('click', function () {
@@ -75,6 +96,40 @@ function featuredArtistFilter(id) {
             oneArtist.classList.add('hide')
         }
     })
+}
+
+document.querySelectorAll('.alphabet-filter-button').forEach(button => {
+    button.addEventListener("click", function() {
+        console.log(button.dataset.filter)
+        alphabeticArtistFilter(button.dataset.filter)
+
+    })
+})
+
+function alphabeticArtistFilter(letter) {
+    document.querySelectorAll(".one-artist-alphabet").forEach(oneArtist => {
+        document.querySelector(".artist-specific-letter-heading").textContent = "ARTISTS '" + letter + "'";
+        if (oneArtist.classList.contains(letter)) {
+            oneArtist.classList.remove("hide")
+            oneArtist.classList.add("fade-in")
+
+        } else {
+            oneArtist.classList.add("hide")
+        }
+
+    })
+}
+
+document.querySelector(".all").addEventListener("click", showAllArtists);
+
+function showAllArtists() {
+    document.querySelector(".artist-specific-letter-heading").textContent = "ALL";
+    document.querySelectorAll(".one-artist-alphabet").forEach(oneArtist => {
+        oneArtist.classList.remove("hide")
+        oneArtist.classList.add("fade-in")
+    })
+
+
 }
 
 }
