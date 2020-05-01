@@ -13,14 +13,17 @@
 <body>
     <nav class="nav-wrapper">
         <div class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></div>
-        <div class="nav-logo ico"><img src="../images/TRANSPARENT-SQR-BLK.png"></div>
-        <ul class="nav-items">
-            <li class="list-item"><a href="../index.html">Home</a></li>
-            <li class="list-item"><a href="events.html">Events</a></li>
-            <li class="list-item"><a href="galleries.html">Galleries</a></li>
-            <li class="list-item"><a href="artists.html">Artists</a></li>
-            <li class="list-item"><a href="about.html">About</a></li>
-        </ul>
+        <!--<div class="nav-logo ico"><img src="../images/TRANSPARENT-SQR-BLK.png"></div>-->
+
+            <a href="../index.html">HOME</a>
+            <a href="events.html">EVENTS</a>
+            <a href="galleries.html">GALLERIES</a>
+            <a href="artists.html">ARISTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </nav>
     <div class="head-imgs">
         <!--   <h2>header image here</h2><img class="head-img-events">-->
@@ -31,13 +34,14 @@
                 <article class="featured-artists">
                     <h1 class="featured-artists-heading">OUR FEATURED ARTISTS</h1>
                     <div class="featured-artists-grid">
+                       <template class="featured-artists-template">
                         <div class="one-artist">
-                            <img src="../images/man-in-black-long-sleeves-holding-cigarette-3779061.jpg">
-                            <p class="artist-style">Art style</p>
+                            <img src="">
+                            <p class="artist-style">Artwork: <span></span></p>
                             <p class="artist-name">ARTIST NAME</p>
 
-                        </div>
-                        <div class="one-artist"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
+                           </div></template>
+                   <!--     <div class="one-artist"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
                             <p class="artist-style">Art style</p>
                             <p class="artist-name">ARTIST NAME</p>
                         </div>
@@ -45,27 +49,33 @@
                             <p class="artist-style">Art style</p>
                             <p class="artist-name">ARTIST NAME</p>
 
-                        </div>
+                        </div>-->
 
                     </div>
                 </article>
+
                 <article class="selected-artist">
-                    <h2 class="selected-artist-heading">SELECTED ARTIST</h2>
+                   <template class="selected-artist-template">
                     <div class="selected-artist-grid">
+
                         <div class="selected-artist-photo">
-                            <img src="../images/man-person-people-old-34534.jpg">
+                            <img src="">
 
                         </div>
                         <div class="selected-artist-text">
                             <p class="artist-name">ARTIST NAME</p>
-                            <p class="artist-style">Art style</p>
+                            <p class="artist-style">Artwork: <span></span></p>
                             <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
-                            <p class="artist-contact">Contact the artist hehe</p>
+                            <p class="artist-contact">Contact: <span></span></p>
 
                         </div>
+
                     </div>
+                    </template>
 
                 </article>
+
+
                 <article class="alphabet-sorting-artist">
                     <h2 class="all-artists-heading">ALL ARTISTS</h2>
                     <div class="alphabet-list">
@@ -166,4 +176,5 @@
 
 
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/fetching.js"></script>
 </body></html>
