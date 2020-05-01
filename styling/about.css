@@ -133,6 +133,8 @@ h3 {
     text-transform: uppercase;
 }
 
+
+
 p {
     font-size: 16x;
     margin: 0;
@@ -148,14 +150,14 @@ p {
 
 /*body text layout*/
 
-.col.col-complementary,
-.col.col-main {
+.col.col-body,
+.col.col-head {
     margin: 0;
     padding: 0;
     background-color: white;
 }
 
-.col.col-main {
+.col.col-head {
     flex: 1;
     text-align: right;
     margin-right: 20px;
@@ -171,7 +173,7 @@ p {
 }
 
 
-.col.col-complementary {
+.col.col-body {
     flex: 1;
     margin: 0 0 20px 0;
 }
@@ -220,15 +222,18 @@ p {
     grid-area: asideAds;
     border: solid thin black;
     display: grid;
-    margin: 30px 0px 30px;
+    padding: 20px;
+    margin: 30px 0px;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+
 }
 
 
 /*where the adds will go*/
 .add-1 {
     background-color: antiquewhite;
+
 }
 
 .add-2 {
@@ -237,6 +242,8 @@ p {
 
 .add-3 {
     background-color: antiquewhite;
+     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -334,11 +341,11 @@ input {
         flex-basis: 100%;
     }
 
-    col-main {
+    col-head {
         flex: 1;
     }
 
-    .col-complementary {
+    .col-body {
         flex: 1;
     }
 
@@ -394,19 +401,19 @@ input {
 
     }
 
-.co.col-main {
+.co.col-head {
 
          text-align: left;
     margin 0;
     padding: 0;
     }
 
-    col-main{
+    col-head{
         flex: 1;
 
     }
 
-    .col-complementary {
+    .col-body {
         flex: 1;
     }
 
