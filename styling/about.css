@@ -22,6 +22,8 @@ body {
 
 }
 
+
+
 .downArrow {
     position: absolute;
     top: 90%;
@@ -235,21 +237,18 @@ p {
 
 
 /*where the adds will go*/
-.add-1 {
-    background-color: antiquewhite;
+.add {
 
-}
-
-.add-2 {
-    background-color: antiquewhite;
-}
-
-.add-3 {
     background-color: antiquewhite;
      width: 100%;
     overflow: hidden;
 }
 
+.add-1 {
+    background-image: url(../images/AdobeStock_117023915.jpeg);
+    width: auto;
+    height: auto;
+}
 
 /*footer sits outside overall grid layout*/
 
