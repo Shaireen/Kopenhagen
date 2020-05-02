@@ -4,32 +4,174 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title></title>
     <link rel="stylesheet" href="../styling/galleries.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gyu0jeo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav class="nav-wrapper">
-        <div class="nav-logo">Copenhagen Artguide</div>
-        <ul class="nav-items">
-            <li class="list-item"><a href="../index.html">Home</a></li>
-            <li class="list-item"><a href="events.html">Events</a></li>
-            <li class="list-item"><a href="galleries.html">Galleries</a></li>
-            <li class="list-item"><a href="artists.html">Artists</a></li>
-            <li class="list-item"><a href="about.html">About</a></li>
-        </ul>
+        <div class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></div>
+        <!--<div class="nav-logo ico"><img src="../images/TRANSPARENT-SQR-BLK.png"></div>-->
+
+        <a href="../index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="galleries.html">GALLERIES</a>
+        <a href="artists.html">ARISTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
 
     </nav>
-<div class="head-imgs"><h2>header image here</h2><img class="head-img-events"></div>
+    <div class="head-imgs">
+        <!--   <h2>header image here</h2><img class="head-img-events">-->
+    </div>
     <div class="main-wrapper">
         <div class="wrapper">
             <div class="featured-content">
-                the main content goes here
+                <article class="featured-galleries">
+                    <h1 class="featured-galleries-heading">OUR FEATURED GALLERIES</h1>
+                    <div class="featured-galleries-grid">
+             <!--           <template class="featured-galleries-template">
+                            <div class="one-gallery">
+                                <img src="">
+                                <p class="gallery-style">Artwork: <span></span></p>
+                                <p class="gallery-name">GALLERY NAME</p>
+
+                            </div>
+                        </template>-->
+                             <div class="one-gallery"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
+                            <p class="gallery-style">Art style</p>
+                            <p class="gallery-name">ARTIST NAME</p>
+                        </div>
+                        <div class="one-gallery"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
+                            <p class="gallery-style">Art style</p>
+                            <p class="gallery-name">ARTIST NAME</p>
+                        </div>
+
+                      <div class="one-gallery"><img src="../images/photo-of-woman-with-brown-eyes-1627936.jpg">
+                            <p class="gallery-style">Art style</p>
+                            <p class="gallery-name">ARTIST NAME</p>
+                        </div>
+
+
+
+                    </div>
+                </article>
+
+                <article class="selected-gallery">
+                  <!--  <template class="selected-gallery-template">-->
+                        <div class="selected-gallery-grid">
+
+                              <div class="selected-gallery-text">
+                                <p class="gallery-name">GALLERY NAME</p>
+                                <p class="artist-style">Artwork: <span></span></p>
+                                <p class="gallery-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                                <p class="gallery-contact">Contact: <span></span></p>
+
+                            </div>
+
+                            <div class="selected-gallery-photo">
+                               <div class="photo-grid">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                                   <img src="../images/CC.jpg">
+                               </div>
+
+                            </div>
+
+
+                        </div>
+            <!--        </template>-->
+
+                </article>
+
+
+                <article class="alphabet-sorting-gallery">
+                    <h2 class="all-galleries-heading">ALL GALLERIES</h2>
+                    <div class="alphabet-list">
+                        <button class="all">ALL</button>
+                        <button data-filter="A" class="alphabet-filter-button">A</button>
+                        <button data-filter="B" class="alphabet-filter-button">B</button>
+                        <button data-filter="C" class="alphabet-filter-button">C</button>
+                        <button data-filter="D" class="alphabet-filter-button">D</button>
+                        <button data-filter="E" class="alphabet-filter-button">E</button>
+                        <button data-filter="F" class="alphabet-filter-button">F</button>
+                        <button data-filter="G" class="alphabet-filter-button">G</button>
+                        <button data-filter="H" class="alphabet-filter-button">H</button>
+                        <button data-filter="I" class="alphabet-filter-button">I</button>
+                        <button data-filter="J" class="alphabet-filter-button">J</button>
+                        <button data-filter="K" class="alphabet-filter-button">K</button>
+                        <button data-filter="L" class="alphabet-filter-button">L</button>
+                        <button data-filter="M" class="alphabet-filter-button">M</button>
+                        <button data-filter="N" class="alphabet-filter-button">N</button>
+                        <button data-filter="O" class="alphabet-filter-button">O</button>
+                        <button data-filter="P" class="alphabet-filter-button">P</button>
+                        <button data-filter="Q" class="alphabet-filter-button">Q</button>
+                        <button data-filter="R" class="alphabet-filter-button">R</button>
+                        <button data-filter="S" class="alphabet-filter-button">S</button>
+                        <button data-filter="T" class="alphabet-filter-button">T</button>
+                        <button data-filter="U" class="alphabet-filter-button">U</button>
+                        <button data-filter="V" class="alphabet-filter-button">V</button>
+                        <button data-filter="W" class="alphabet-filter-button">W</button>
+                        <button data-filter="X" class="alphabet-filter-button">X</button>
+                        <button data-filter="Y" class="alphabet-filter-button">Y</button>
+                        <button data-filter="Z" class="alphabet-filter-button">Z</button>
+                        <button data-filter="Æ" class="alphabet-filter-button">Æ</button>
+                        <button data-filter="Ø" class="alphabet-filter-button">Ø</button>
+                        <button data-filter="Å" class="alphabet-filter-button">Å</button>
+
+                    </div>
+                    <h2 class="gallery-specific-letter-heading">GALLERIES "A"</h2>
+                    <div class="galleries-sorting-grid">
+                       <template class="gallery-alphabet-template">
+                        <div class="one-gallery-alphabet">
+                            <div class="gallery-photo">
+                                <img src="">
+                            </div>
+                            <p class="gallery-name">gallery Name</p>
+                            <p class="artist-style">Artwork: <span></span></p>
+                            <p class="gallery-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                            <p class="gallery-contact">Contact: <span></span></p>
+                        </div>
+                        </template>
+                     <!--   <div class="one-artist-alphabet">
+                            <div class="artist-photo">
+                                <img src="../images/grayscale-photo-of-man-s-face-1551446.jpg">
+                            </div>
+                            <p class="artist-name">Artist Name</p>
+                            <p class="artist-style">Art style</p>
+                            <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                            <p class="artist-contact">Contact the artist hehe</p>
+                        </div>
+                        <div class="one-artist-alphabet">
+                            <div class="artist-photo">
+                                <img src="../images/grayscale-photo-of-man-s-face-1551446.jpg">
+                            </div>
+                            <p class="artist-name">Artist Name</p>
+                            <p class="artist-style">Art style</p>
+                            <p class="artist-description">This is a very cool artist or something I don't really know too lazy to search for Lorem ipsum this has to do nanananananan nyan cat.</p>
+                            <p class="artist-contact">Contact the artist hehe</p>
+                        </div>-->
+
+                    </div>
+                </article>
             </div>
             <div class="aside-ads">
-                <div class="add-1">an add image</div>
-                <div class="add-2">an add image</div>
-                <div class="add-3">an add image</div>
+                <div class="aside-ads-container">
+                    <div class="add-1"><img src="../images/ad1.jpg"></div>
+                    <div class="add-2"><img src="../images/ad2.gif"></div>
+                    <div class="add-3"><img src="../images/ad3.gif"></div>
+                    <div class="add-4"><img src="../images/ad4.gif"></div>
+                    <div class="add-5"><img src="../images/ad5.jpg"></div>
+                </div>
             </div>
 
 
@@ -55,4 +197,5 @@
 
 
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/fetching.js"></script>
 </body></html>

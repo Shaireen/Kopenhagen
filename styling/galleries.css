@@ -1,174 +1,508 @@
  * {
-        box-sizing: border-box
-    }
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
 
-    body {
-        margin: 0px 60px;
+ body {
+     margin: 0px 60px;
 
-    }
+ }
 
-    .nav-wrapper {
-        max-width: 1200px;
-        height: auto;
-        margin: 0 auto;
-        padding: 30px;
-        display: grid;
-        grid-template-columns: 50% auto;
-        background-color: darkorchid;
-    }
+ h1,
+ h2 {
+     font-size: 30px;
+ }
 
-    .main-wrapper {
-        max-width: 1200px;
-        width: auto;
-        margin: auto;
-    }
+ .nav-wrapper {
+     /*max-width: 1200px;*/
+     background: white;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: flex-end;
+     flex: 100%;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     text-align: end;
+     left: 0;
+     z-index: 5;
+     margin: 0;
+     padding: 0 60px;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     font-size: 25px;
+     /*     display: grid;
+     grid-template-columns: 50% auto;
+     justify-items: end;
+     align-items: end;*/
+ }
+
+ .nav-wrapper .icon {
+     display: none;
+ }
+
+ .main-wrapper {
+     /*max-width: 1200px;*/
+     width: auto;
+     margin: auto;
+ }
 
 
-    .nav-wrapper ul li {
-        display: inline;
-        list-style-type: none;
+ .nav-wrapper a {
+     display: block;
+     float: right;
+     text-decoration: none;
+     color: black;
+     padding: 20px 15px 10px 15px;
 
-    }
+ }
 
-    .nav-logo {
-        padding: 0;
-        margin: 0;
-    }
 
-    .wrapper {
-        max-width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat (3, 2fr);
 
-        grid-template-areas:
-            "headerImages headerImages headerImages"
-            "featuredMainCon featuredMainCon asideAds"
 
-    }
+ .nav-logo {
+     padding: 20px 10px 10px 60px;
+     margin: 0;
+     font-size: 40px;
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+     position: absolute;
+     left: 0;
+     line-height: 0.7;
+ }
 
-    .featured-content {
-        grid-area: featuredMainCon;
-        min-height: 500px;
-        margin: 30px 0px;
-        background-color: darkcyan;
-        padding: 30px;
-    }
+ .nav-logo > span {
+     color: #e75d40;
+ }
 
-.head-imgs {
-    grid-area: headerImages;
-    margin: auto;
-    background-color: dodgerblue;
+
+ .nav-wrapper.responsive {
+     position: fixed;
+     top: 0;
+ }
+
+
+
+ .nav-wrapper.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+ }
+
+ .nav-wrapper.responsive a.icon {
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+
+ .head-imgs {
+     grid-area: headerImages;
+     margin-top: 70px;
+     height: 40vh;
+     background-image: url("../images/headerartists.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .wrapper {
+     max-width: 100%;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+
+     grid-template-areas:
+         "headerImages headerImages headerImages headerImages headerImages headerImages"
+         "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon asideAds"
+
+ }
+
+ .featured-content {
+     grid-area: featuredMainCon;
+     min-height: 500px;
+     margin: 30px 0 30px 0px;
+     padding: 0;
+ }
+
+ /* featured artists styling */
+ .featured-galleries-heading {
+     margin: 0px 30px 30px 0;
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+ }
+
+ .featured-galleries-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+ }
+
+ .galleries-sorting-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(270px, 490px));
+ }
+ .one-gallery {
+     margin: 0 30px 0 0;
+     position: relative;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     font-size: 25px;
+
+ }
+
+ .one-gallery img {
+     max-width: 100%;
+     transition: .5s ease-in-out all;
+ }
+
+ .one-gallery:hover img {
+     opacity: 0.5;
+ }
+
+ .one-gallery:hover > p,
+ .one-gallery:hover > button {
+     opacity: 1;
+ }
+
+ .one-gallery> p {
+     position: absolute;
+     top: 0;
+     padding: 20px;
+     opacity: 0;
+ }
+
+ .one-gallery p:nth-child(2) {
+     top: 30%;
+ }
+
+ .one-gallery > button {
+     position: absolute;
+     background: white;
+     border: 1px solid black;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 20px;
+     padding: 10px;
+     top: 70%;
+     right: 0;
+     margin-right: 20px;
+     opacity: 0;
+     transition: all .5s;
+ }
+
+.one-gallery > button:hover {
+    background-color: #e75d40;
+    color: white;
 }
 
-    .aside-ads {
-        grid-area: asideAds;
-        background-color: darkkhaki;
-        display: grid;
-        margin: 30px 0px 30px;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
 
-    .add-1 {
-        background-color: crimson;
-    }
+ /* selected artist styling */
 
-    .add-2 {
-        background-color: crimson;
-    }
+ .selected-gallery-heading {
+     padding: 10px;
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+     margin-bottom: 0;
+ }
 
-    .add-3 {
-        background-color: crimson;
-    }
+ .selected-gallery-grid {
+     display: grid;
+     grid-auto-rows: repeat(autofit);
+     background-color: #f8f8f8;
+     margin: 25px 0;
+     transition: all .8s;
+ }
 
-    .footer {
-        display: grid;
-        margin: auto;
-        padding: 30px;
-        width: 100%;
-        background-color: red;
-        justify-content: center;
-        grid-template-columns: minmax(100px, 600px) minmax(100px, 600px);
-        grid-template-rows: 1fr;
-    }
+ .selected-gallery-photo img {
+     max-width: 100%;
+ }
 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
 
-    .foot-right ul li {
-        display: inline;
-        list-style-type: none;
-    }
+.photo-grid > img {
+    padding: 10px;
+}
 
+ .selected-gallery-text{
 
+     margin: 0;
+     display: grid;
+     grid-template-rows: auto;
+     padding: 10px;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     font-size: 25px;
+     line-height: 1.1;
+ }
 
-    /*tablet media quieres*/
+ .selected-gallery-text > p {
+     padding: 10px;
+ }
 
-    @media screen and (max-width: 950px) {
-        .wrapper {
-            grid-template-areas:
-                "featuredMainCon featuredMainCon featuredMainCon"
-                "asideAds asideAds asideAds"
-        }
+ .gallery-name,
+ .gallery-contact {
+     font-weight: 600;
+ }
 
-        .aside-ads {
-            grid-template-columns: repeat(3, 1fr);
-               margin-top: 0;
-        }
+ .gallery-description {
+     font-size: 20px;
+ }
 
-        .nav-wrapper {
-            padding-bottom: 30px;
-        }
+ /* alphabet sorting artists */
 
-        .nav-items {
-            grid-column: 1/5;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            bottom: 0%;
-        }
+ .alphabet-list {
+     margin-right: 30px;
+ }
 
-        .nav-logo {
-            grid-column: 1/5;
-            text-align: center;
-        }
+ .alphabet-list > button {
+     background: transparent;
+     border: none;
+     padding: 10px;
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+     font-size: 20px;
+     transition: all .5s;
 
-    }
-
-/*mobile*/
-
-@media screen and (max-width: 690px){
-    .nav-logo {
-            grid-column: 1/5;
-            text-align: center;
-
-        }
-    .nav-items {
-        grid-column: 1/5;
-        text-align: center;
-          position: relative;
-            bottom: 0%;
-    }
+ }
 
 
-    .nav-wrapper {
-         padding-bottom: px;
-    }
+.alphabet-list > button:hover {
+    color: #e75d40;
+}
 
-     .nav-wrapper ul li {
-        display: block;
-         padding: 10px;
-            }
+.alphabet-list > button:focus {
+    outline: none;
+}
+ .all-galleries-heading {
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+ }
 
-    .aside-ads {
-      grid-template-columns: 1fr;
-        margin-top: 0;
-    }
+ .gallery-specific-letter-heading {
+     margin-top: 40px;
+     font-family: acumin-pro, sans-serif;
+     font-weight: 700;
+ }
 
-    .footer > div {
-        grid-column: 1/5;
+ .one-gallery-alphabet {
+     min-height: 300px;
+     background-color: #f8f8f8;
+     margin: 10px;
+     display: grid;
+     grid-template-rows: auto;
+     font-family: source-sans-pro, sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     font-size: 20px;
+     line-height: 1.1;
+ }
+
+ .one-gallery-alphabet img {
+     max-width: 100%;
+
+ }
+
+ .one-gallery-alphabet > p {
+     padding: 10px;
+ }
+
+ .aside-ads {
+     grid-area: asideAds;
+
+ }
+
+ .aside-ads img {
+     max-width: 100%;
+ }
+
+
+
+ .aside-ads-container > div {
+     margin: 10px 0;
+ }
+
+/* class for hiding non-selected artists */
+.hide {
+    display: none;
+}
+/* fade in effect */
+.fade-in {
+  animation: fadeIn ease-in 1s;
+
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+ .footer {
+     display: grid;
+     margin-bottom: 0;
+     padding: 30px;
+     width: 100%;
+     background-color: #1f2d2e;
+     justify-content: center;
+     grid-template-columns: minmax(100px, 600px) minmax(100px, 600px);
+     grid-template-rows: 1fr;
+ }
+
+
+ .foot-right ul li {
+     display: inline;
+     list-style-type: none;
+ }
+
+
+ /*large screens*/
+
+ @media screen and (min-width: 1150px) {
+     .aside-ads-container {
+         display: grid;
+         grid-template-rows: repeat(auto-fit);
+         margin-top: 80px;
+         justify-items: end;
+         position: sticky;
+         top: 0;
+     }
+
+     .ico {
+         display: none;
+     }
+
+ }
+
+ /*tablet media quieres*/
+
+ @media screen and (max-width: 1150px) {
+     .wrapper {
+         grid-template-areas:
+             "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon"
+             "asideAds asideAds asideAds asideAds asideAds asideAds"
+     }
+
+     .aside-ads-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         margin: 20px 0;
+         align-items: center;
+         justify-items: center;
+         position: static;
+     }
+
+     .featured-galleries-grid div {
+         justify-items: center;
+         margin: 10px;
+     }
+
+     .featured-galleries-heading,
+     .all-galleries-heading,
+     .gallery-specific-letter-heading {
+         margin: 30px 10px 10px 10px;
+     }
+
+     .selected-gallery {
+         margin: 40px 10px;
+     }
+
+     .aside-ads-container > div {
+         margin: 10px;
+     }
+
+     .one-gallery-alphabet {
+         margin: 10px;
+
+     }
+
+     .nav-wrapper div:first-child {
+         display: none;
+     }
+
+     .ico > img {
+         display: inline;
+         height: 100px;
+     }
+
+     .nav-wrapper {
+         width: 100vw;
+         flex-direction: column;
+
+
+     }
+
+     .nav-wrapper a {
+         display: none;
+     }
+
+     .nav-wrapper a.icon {
+         float: right;
+         display: block;
+     }
+
+
+     /*     .nav-wrapper {
+         padding-bottom: 30px;
+     }
+
+     .nav-items {
+         grid-column: 1/5;
          text-align: center;
+         margin: 0;
+         padding: 0;
+         position: relative;
+         bottom: 0%;
+     }
 
-    }
+     .nav-logo {
+         grid-column: 1/5;
+         text-align: center;
+     }*/
 
-}
+ }
+
+ /* icon position */
+
+ @media screen and (max-width: 1150px) and (min-width: 450px) {
+     .nav-wrapper.responsive a.icon {
+         padding-right: 75px;
+     }
+ }
+
+ /* small screens */
+
+ @media screen and (max-width: 450px) {
+     body {
+         margin: 0 15px;
+     }
+
+     .head-imgs {
+         margin: 70px 10px 0 10px;
+     }
+
+     .nav-wrapper {
+         padding: 0px 10px;
+     }
+
+     .nav-wrapper.responsive a.icon {
+         padding-right: 25px;
+     }
+
+     .one-gallery {
+         font-size: 20px;
+     }
+
+     .one-gallery > button {
+         top: 68%;
+         padding: 5px;
+     }
+ }
