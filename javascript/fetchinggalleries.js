@@ -1,7 +1,7 @@
 /*Fetching the data for all galleries*/
 
-const artistsLink = "http://designhavn.dk/3Wordpress/wp-json/wp/v2/photogallery?_embed";
-fetch(artistsLink)
+const galleriesLink = "http://designhavn.dk/3Wordpress/wp-json/wp/v2/photogallery?_embed";
+fetch(galleriesLink)
     .then(function (response) {
         return response.json()
     })
@@ -15,11 +15,9 @@ function showData(showGalleries) {
 
     showGalleries.forEach(showOneGallery);
 
-    var clone;
-
     function showOneGallery(oneGallery) {
         const templateFeaturedGalleries = document.querySelector(".featured-galleries-template").content;
-        clone = templateFeaturedGalleries.cloneNode(true);
+        const clone = templateFeaturedGalleries.cloneNode(true);
         // featured galleries section
         if (oneGallery.featured == "yes") {
             clone.querySelector(".one-gallery .gallery-name").textContent = oneGallery.event_name;
