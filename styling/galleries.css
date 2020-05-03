@@ -128,22 +128,22 @@
  }
 
  /* featured artists styling */
- .featured-galleries-heading {
+ .featured-galleries-heading, .featured-artinst-heading {
      margin: 0px 30px 30px 0;
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
  }
 
- .featured-galleries-grid {
+ .featured-galleries-grid, .featured-artinst-grid {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
  }
 
- .galleries-sorting-grid {
+ .galleries-sorting-grid, .artinst-sorting-grid {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(270px, 490px));
  }
- .one-gallery {
+ .one-gallery, .one-artinst {
      margin: 0 30px 0 0;
      position: relative;
      font-family: source-sans-pro, sans-serif;
@@ -153,32 +153,34 @@
 
  }
 
- .one-gallery img {
+ .one-gallery img, .one-artinst img {
      max-width: 100%;
      transition: .5s ease-in-out all;
  }
 
- .one-gallery:hover img {
+ .one-gallery:hover img, .one-artinst:hover img {
      opacity: 0.5;
  }
 
  .one-gallery:hover > p,
- .one-gallery:hover > button {
+ .one-gallery:hover > button,
+.one-artinst:hover > p,
+ .one-artinst:hover > button {
      opacity: 1;
  }
 
- .one-gallery> p {
+ .one-gallery> p, .one-artinst > p {
      position: absolute;
      top: 0;
      padding: 20px;
      opacity: 0;
  }
 
- .one-gallery p:nth-child(2) {
+ .one-gallery p:nth-child(2), .one-artinst p:nth-child(2) {
      top: 30%;
  }
 
- .one-gallery > button {
+ .one-gallery > button, .one-artinst > button {
      position: absolute;
      background: white;
      border: 1px solid black;
@@ -194,7 +196,7 @@
      transition: all .5s;
  }
 
-.one-gallery > button:hover {
+.one-gallery > button:hover, .one-artinst > button:hover {
     background-color: #e75d40;
     color: white;
 }
@@ -202,14 +204,14 @@
 
  /* selected gallery styling */
 
- .selected-gallery-heading {
+ .selected-gallery-heading, .selected-artinstg-heading {
      padding: 10px;
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
      margin-bottom: 0;
  }
 
- .selected-gallery-grid, .selected-gallery-grid2 {
+ .selected-gallery-grid, .selected-gallery-grid2, .selected-artinstg-grid, .selected-artinstg-grid2 {
      display: grid;
      grid-template-rows: repeat(auto-fit);
      background-color: #f8f8f8;
@@ -217,20 +219,20 @@
      transition: all .8s;
  }
 
- .selected-gallery-photo img, .selected-gallery-photo2 img  {
+ .selected-gallery-photo img, .selected-gallery-photo2 img, .selected-artinstg-photo, .selected-artinstg-photo2 {
      max-width: 100%;
  }
 
-.photo-grid {
+.photo-grid, .photog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.photo-grid > img {
+.photo-grid > img, .photog-grid > img {
     padding: 10px;
 }
 
- .selected-gallery-text, .selected-gallery-text2{
+ .selected-gallery-text, .selected-gallery-text2, .selected-artinsgt-text, .selected-artinsgt-text2 {
 
      margin: 0;
      display: grid;
@@ -243,7 +245,7 @@
      line-height: 1.1;
  }
 
- .selected-gallery-text > p, .selected-gallery-text2 > p {
+ .selected-gallery-text > p, .selected-gallery-text2 > p, .selected-artinsgt-text > p, .selected-artinsgt-text2 > p  {
      padding: 10px;
  }
 
@@ -293,18 +295,18 @@
 .alphabet-list > button:focus {
     outline: none;
 }
- .all-galleries-heading {
+ .all-galleries-heading, .all-artinst-heading {
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
  }
 
- .gallery-specific-letter-heading {
+ .gallery-specific-letter-heading, .artinst-specific-letter-heading {
      margin-top: 40px;
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
  }
 
- .one-gallery-alphabet {
+ .one-gallery-alphabet, .one-artinst-alphabet {
      min-height: 300px;
      background-color: #f8f8f8;
      margin: 15px;
@@ -317,12 +319,12 @@
      line-height: 1.1;
  }
 
- .one-gallery-alphabet img {
+ .one-gallery-alphabet img, .one-artinst-alphabet img {
      max-width: 100%;
 
  }
 
- .one-gallery-alphabet > p {
+ .one-gallery-alphabet > p, .one-artinst-alphabet > p {
      padding: 10px;
  }
 
