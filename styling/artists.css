@@ -62,7 +62,16 @@
  }
 
 
+.nav-wrapper a:hover {
+    color: #e75d40;
+    border-bottom: 2px solid #e75d40;
+    line-height: 0.9;
+}
 
+.nav-wrapper a.active {
+    border-bottom: 2px solid #e75d40;
+    line-height: 0.9;
+}
 
  .nav-logo {
      padding: 20px 10px 10px 60px;

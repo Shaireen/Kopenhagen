@@ -58,9 +58,20 @@
      text-decoration: none;
      color: black;
      padding: 20px 15px 10px 15px;
+     transition: all .5s;
 
  }
 
+.nav-wrapper a:hover {
+    color: #e75d40;
+    border-bottom: 2px solid #e75d40;
+    line-height: 0.9;
+}
+
+.nav-wrapper a.active {
+    border-bottom: 2px solid #e75d40;
+    line-height: 0.9;
+}
 
 
 
@@ -98,6 +109,8 @@
      top: 0;
      right: 0;
  }
+
+
 
  .head-imgs {
      grid-area: headerImages;
@@ -180,10 +193,10 @@
 
  .one-gallery > button {
      position: absolute;
-     background: white;
-     border: 1px solid black;
+     background: #b5d7db;
+     border: none;
      font-family: source-sans-pro, sans-serif;
-     font-weight: 400;
+     font-weight: 700;
      font-style: normal;
      font-size: 20px;
      padding: 10px;
@@ -237,7 +250,7 @@
      grid-template-rows: auto;
      padding: 10px;
      font-family: source-sans-pro, sans-serif;
-     font-weight: 300;
+     font-weight: 400;
      font-style: normal;
      font-size: 25px;
      line-height: 1.1;
@@ -274,7 +287,7 @@
      font-family: acumin-pro, sans-serif;
      font-weight: 700;
      font-size: 20px;
-     transition: all .5s;
+
 
  }
 
@@ -282,7 +295,17 @@
     font-family: acumin-pro, sans-serif;
     font-size: 20px;
     padding: 5px 0;
-    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
+    background: #b5d7db;
+    transition: all .5s;
+    border: none;
+
+}
+
+.alphabet-gallery-button:hover {
+    color: white;
+    background: #e75d40;
 
 }
 
