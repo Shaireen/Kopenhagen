@@ -103,7 +103,7 @@
      grid-area: headerImages;
      margin-top: 70px;
      height: 40vh;
-     background-image: url("../images/headerartists.jpg");
+     background-image: url("../images/galleryheader.jpeg");
      background-repeat: no-repeat;
      background-size: cover;
  }
