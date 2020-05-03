@@ -22,8 +22,6 @@ body {
 
 }
 
-
-
 .downArrow {
     position: absolute;
     top: 90%;
@@ -209,7 +207,7 @@ p {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 200px;
-        grid-template-rows:  1200px;
+    grid-template-rows: 1200px;
 
     grid-template-areas:
         "featuredMainCon featuredMainCon asideAds"
@@ -237,18 +235,15 @@ p {
 
 
 /*where the adds will go*/
-.add {
+.aside-ads > .add {
 
     background-color: antiquewhite;
-     width: 100%;
+    width: auto;
     overflow: hidden;
+    height: 100%;
+
 }
 
-.add-1 {
-    background-image: url(../images/AdobeStock_117023915.jpeg);
-    width: auto;
-    height: auto;
-}
 
 /*footer sits outside overall grid layout*/
 
@@ -257,86 +252,82 @@ p {
 
 
 .hidden {
-  display: none;
+    display: none;
 }
 
-footer{
-  background-color: #1F2D2E;
-  width: 100%;
+footer {
+    background-color: #1F2D2E;
+    width: 100%;
 
 }
 
 .footer-links-styled {
-  color: #888;
-  font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  max-width: 1008px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 24px;
+    color: #888;
+    max-width: 1008px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
 }
 
 .footer-links-styled:after {
-  display: table;
-  clear: both;
-  content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .footer-lists:after {
-  display: table;
-  clear: both;
-  content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 
+/*footer header text*/
 .ftr-hdr {
-  color: white;
-  font-weight: 700;
+    color: white;
+    font-weight: 700;
     text-transform: uppercase;
-  margin: 1em 0 0;
+    margin: 1em 0 0;
+    font-size: 18px;
 }
 
-@media only screen and (min-width: 768px) {
-  .ftr-hdr {
-    font-size: 18px;
-  }
-}
 
 .footer-list-wrap {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
 }
 
 
 
 .ftr-links-sub {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .ftr-links-sub:after {
-  display: table;
-  clear: both;
-  content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .ftr-links-sub li {
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 3px 0;
-  color: #888;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 0;
+    color: #888;
 
-  /*width: 150px;*/
+    /*width: 150px;*/
 }
 
 .footer-links-styled a,
 .footer-links-styled a:link,
 .footer-links-styled a:visited,
 .ftr-links-sub li .link {
-  text-decoration: none;
-  color: #888;
-  padding: 5px 0;
-  display: block;
+    text-decoration: none;
+    color: darkgrey;
+    padding: 5px 0;
+    display: block;
 }
 
 
@@ -344,142 +335,135 @@ footer{
 .footer-links-styled a:hover,
 .footer-links-styled a:active,
 .ftr-links-sub li .link:hover {
-  text-decoration: underline;
-  color: white;
-  cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-links-styled a, .footer-links-styled a:link, .footer-links-styled a:visited, .ftr-links-sub li .link {
-    padding: 0;
-  }
+
+    .footer-links-styled a,
+    .footer-links-styled a:link,
+    .footer-links-styled a:visited,
+    .ftr-links-sub li .link {
+        padding: 0;
+    }
 }
-/* BEGIN EMAIL CAPTURE STYLES*/
+
+/* subscrption box styling*/
 
 .footer-email {
-  text-align: center;
+    text-align: center;
 }
 
 #sub-form {
-  height: 44px;
+    height: 44px;
 }
-
 
 
 #sub-form #sub-input-field {
 
-  border: 1px solid #D6D6D6;
-   color: black;
-  float: left;
-  padding: 5px;
-  width: 70%;
-  height: 100%;
+    border: 1px solid #D6D6D6;
+    color: black;
+    float: left;
+    padding: 5px;
+    width: 70%;
+    height: 100%;
 }
 
-#sub-form #sub-input-field:hover {
-  border: 1px solid #888;
-}
 
-#sub-form #sub-input-field:focus {
-  border: 1px solid #ef9223;
-  outline: #ef9223 auto 5px;
-}
 
 #sub-form .button {
-  width: 30%;
-  height: 100%;
-  padding: 5px;
-  float: left;
-  border: 1px solid #DFDFDF;
-  color: white;
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    color: white;
     text-align: center;
-  text-transform: uppercase;
-  background: #DC4333;
-
-  cursor: pointer;
-  vertical-align: middle;
-  outline: none;
+    text-transform: uppercase;
+    background: #DC4333;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
 }
 
 #sub-form .button:hover,
 #sub-form .button:active {
-  background: black;
-  color: #FFF;
-  outline: none;
+    background-color: gainsboro;
+    color: black;
+    outline: none;
 }
 
 
-/* BEGIN SOCIAL STYLES*/
+/* social media section*/
 
 .footer-social {
-  text-align: center;
+    text-align: center;
 }
 
 .footer-social ul {
-  padding: 0;
-  display: inline-block;
-  list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
 }
 
 .footer-social ul:after {
-  display: table;
-  clear: both;
-  content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .footer-social li {
-  float:left;
-  margin: 0 15px 0 0;
-  padding: 0;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
 }
 
+/*footer media q*/
+
 @media only screen and (min-width: 768px) {
-  .footer-lists {
-    width: 100%;
-  }
-  .footer-email {
-    width: 50%;
-    float: left;
-    text-align: left;
-  }
-  .footer-social {
-    width: 45%;
-    margin-left: 5%;
-    float: left;
-    text-align: left;
-  }
+    .footer-lists {
+        width: 100%;
+    }
+
+    .footer-email {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .footer-social {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
+        text-align: left;
+    }
 }
 
 @media only screen and (min-width: 1008px) {
-  .footer-lists {
-    width: 66.6666%;
-    float: left;
-  }
-  .footer-email {
-    width: 33.3333%;
-  }
-  .footer-social {
-    width: 33.3333%;
-    float: right;
-    margin-left: 0;
-  }
-}
+    .footer-lists {
+        width: 66.6666%;
+        float: left;
+    }
 
-.footer-legal {
-  padding: 15px 0 0;
-  clear: left;
-}
+    .footer-email {
+        width: 33.3333%;
+    }
 
-.footer-payment {
-  text-align: center;
+    .footer-social {
+        width: 100%;
+        float: right;
+        margin-left: 0;
+    }
 }
 
 
+/*Rest of page media queries*/
 
 
 
-
-/*tablet media quieres*/
+/*tablet*/
 
 @media screen and (max-width: 950px) {
     .wrapper {
@@ -524,12 +508,10 @@ footer{
 /*mobile*/
 
 @media screen and (max-width: 690px) {
-    body{
+    body {
         margin: 0;
         padding: 0;
     }
-
-
 
 
     .aside-ads {
@@ -543,17 +525,16 @@ footer{
         flex-direction: column;
         flex-basis: 100%;
 
-
     }
 
-.co.col-head {
+    .co.col-head {
 
-         text-align: left;
-    margin 0;
-    padding: 0;
+        text-align: left;
+        margin 0;
+        padding: 0;
     }
 
-    col-head{
+    col-head {
         flex: 1;
 
     }
@@ -561,12 +542,3 @@ footer{
     .col-body {
         flex: 1;
     }
-
-     .footer-links-styled a;
-    .footer-links-styled a:link;
-    .footer-links-styled a:visited;
-    .ftr-links-sub li .link {
-    padding: 0;
-    }
-
-}
