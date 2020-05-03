@@ -278,6 +278,13 @@
 
  }
 
+.alphabet-gallery-button {
+    font-family: acumin-pro, sans-serif;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 300;
+
+}
 
 .alphabet-list > button:hover {
     color: #e75d40;
