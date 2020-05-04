@@ -73,37 +73,6 @@ body {
 }
 
 
-.recruitment-img1,
-recruitment-img2 {
-    width: 100%;
-    height: auto;
-}
-
-.recruitment-img1 {
-    content: url("../images/girl-2626753_640.jpg");
-padding-right: 10px;
-
-}
-
-.recruitment-img2 {
-    content: url("../images/phone-1684638_640.jpg");
-
-}
-
-.img-container .recruitment-img1,
-.recruitment-img2 {
-    flex: 50%;
-    max-width: 50%;
-    width: 100%;
-    height: auto;
-
-}
-
-.img-container {
-    display: flex;
-    flex-wrap: wrap;
-padding: 40px 0px;
-}
 
 
 
@@ -192,6 +161,7 @@ h2 {
 h3 {
     font-size: 18.72px;
     text-transform: uppercase;
+    color: #DC4333;
 }
 
 
@@ -199,7 +169,7 @@ h3 {
 p {
     font-size: 16x;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 /*main content styling*/
@@ -209,13 +179,68 @@ p {
     margin: auto;
 }
 
+
+
+.contact-info li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    }
+
+
+/*images*/
+
+
+.recruit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.recruit-wrapper img {
+    margin: 5px;
+    max-width: 25vw;
+    height: auto;
+
+
+}
+
+.recruit-section {
+    background-color: #F8F8F8;
+    }
+
+
+/*
+
+.recruitment-img1 {
+    content: url("../images/girl-2626753_640.jpg");
+
+
+}
+
+.recruitment-img2 {
+    content: url("../images/phone-1684638_640.jpg");
+}
+*/
+
+
+
+
+
+
+
+
+
 /*body text layout*/
 
 .col.col-body,
 .col.col-head {
     margin: 0;
     padding: 0;
-    background-color: white;
+
 }
 
 .col.col-head {
@@ -225,11 +250,11 @@ p {
 
 }
 
-.layout .contact-us {
+.contact-us {
     flex: 1;
     text-align: right;
     margin-right: 20px;
-    background-color: rebeccapurple;
+    padding: 40px 0px;
 
 }
 
@@ -255,7 +280,7 @@ p {
 .col {
     padding: 1em;
     margin: 0 2px 2px 0;
-    background: #b3e888;
+
 }
 
 /*setting grid layout for page*/
@@ -273,34 +298,30 @@ p {
 
 .featured-content {
     grid-area: featuredMainCon;
-    min-height: 500px;
-    margin: 30px 0px;
+    margin: 30px 30px;
     background-color: white;
-    padding: 30px;
+
 }
 
 .aside-ads {
     grid-area: asideAds;
-    border: solid thin black;
     display: grid;
-    padding: 20px;
     margin: 30px 0px;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 
 }
 
 
 /*where the adds will go*/
-.aside-ads > .add {
-
-    background-color: antiquewhite;
-    width: auto;
-    overflow: hidden;
-    height: 100%;
+.aside-ads img {
+    max-width: 100%;
 
 }
 
+.aside-ads-container > div {
+    margin: 10px 0;
+}
 
 /*footer sits outside overall grid layout*/
 
@@ -519,6 +540,21 @@ footer {
 /*Rest of page media queries*/
 
 
+/*wide screen */
+@media screen and (min-width: 1150px) {
+    .aside-ads-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fit);
+        margin-top: 80px;
+        justify-items: end;
+        position: sticky;
+        top: 0;
+
+    }
+
+
+}
+
 
 /*tablet*/
 
@@ -529,10 +565,6 @@ footer {
             "asideAds asideAds asideAds"
     }
 
-    .aside-ads {
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 0;
-    }
 
     .nav-items {
         grid-column: 1/5;
@@ -552,12 +584,27 @@ footer {
         flex-basis: 100%;
     }
 
-    col-head {
+    .col-head {
         flex: 1;
+
+    }
+
+    .col.col-head {
+        text-align: left;
+        color: #DC4333;
     }
 
     .col-body {
         flex: 1;
+    }
+
+    .aside-ads-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin: 20px 0;
+        align-items: center;
+        justify-items: center;
+        position: static;
     }
 
 }
@@ -570,12 +617,18 @@ footer {
         padding: 0;
     }
 
+    .aside-ads-container {
+        display: none;
+    }
 
+
+    /*
     .aside-ads {
         grid-template-columns: 1fr;
         margin-top: 0;
 
     }
+*/
 
 
     .layout {
