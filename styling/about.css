@@ -24,11 +24,12 @@ body {
 
 .downArrow {
     position: absolute;
-    top: 90%;
-    left: 47%;
+    top: 90vh;
+    left: 50%;
     grid-column: 1/-1;
     color: white;
     animation: bounce 2s infinite;
+    fill: white;
 }
 
 @keyframes bounce {
@@ -49,6 +50,64 @@ body {
         transform: translateY(-15px);
     }
 }
+
+
+
+
+
+.top-header,
+.head-img {
+    background-image: url("../images/man-in-black-long-sleeve-biting-a-paintbrush-3779002.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-head {
+    content: url("../images/TRANSPARENT-SQR.png");
+    z-index: 99;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 50vh;
+    left: 47%;
+}
+
+
+.recruitment-img1,
+recruitment-img2 {
+    width: 100%;
+    height: auto;
+}
+
+.recruitment-img1 {
+    content: url("../images/girl-2626753_640.jpg");
+padding-right: 10px;
+
+}
+
+.recruitment-img2 {
+    content: url("../images/startup-849804_1920.jpg");
+
+}
+
+.img-container .recruitment-img1,
+.recruitment-img2 {
+    flex: 50%;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+padding: 40px 0px;
+}
+
+
 
 /*navigation styling*/
 /*
