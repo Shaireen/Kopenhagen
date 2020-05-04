@@ -114,7 +114,7 @@ body {
 .downArrow {
     position: absolute;
     top: 90%;
-    left: 47%;
+    left: 1%;
     grid-column: 1/-1;
     color: white;
     animation: bounce 2s infinite;
