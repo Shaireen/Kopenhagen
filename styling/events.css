@@ -43,7 +43,10 @@
      padding: 0px 10px;
 
  }
-
+a {text-decoration: none;
+color: black;
+    font-style: bold;
+}
  .nav-wrapper ul li > a {
      text-decoration: none;
      color: black;
@@ -171,6 +174,14 @@
  .event-name,
  .artist-contact {
      font-weight: 600;
+     color: white;
+     font-family: acumin-pro, sans-serif;
+
+ }
+
+ .event-style {
+     font-weight: 600;
+     color: white;
  }
 
  .event-description {
