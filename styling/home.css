@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    position: relative;
+    max-width: 100%;
 }
 
 .logo img {
@@ -31,11 +31,11 @@ body {
 #logo {
     width: 15%;
     height: 15%;
-    z-index: 1;
+    z-index: 4;
     position: absolute;
     align-content: center;
-    margin-top: 26%;
-    margin-left: 40%;
+    margin-top: 25%;
+    margin-left: 35.5%;
 }
 
 /*navigation styling*/
@@ -91,11 +91,11 @@ body {
     padding: 20px 15px 10px 15px;
 }
 
-.nav-logo > span {
+.name > span {
     color: #e75d40;
 }
 
-.nav-logo {
+.name {
     padding: 20px 10px 10px 60px;
     margin: 0;
     margin-top: 18px;
