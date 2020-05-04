@@ -4,43 +4,150 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://use.typekit.net/gyu0jeo.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
     <link rel="stylesheet" href="../styling/home.css">
 </head>
 
 <body>
     <div id="headerimg">
         <nav class="nav-wrapper">
-            <h1 class="nav-logo">Kopenhagen Artguide</h1>
-            <ul class="nav-items">
-                <li class="list-item"><a href="home.html">Home</a></li>
-                <li class="list-item"><a href="subpages/events.html">Events</a></li>
-                <li class="list-item"><a href="subpages/galleries.html">Galleries</a></li>
-                <li class="list-item"><a href="subpages/artists.html">Artists</a></li>
-                <li class="list-item"><a href="subpages/about.html">About</a></li>
-            </ul>
-            <div id="logo"><img id="logoimg" src="../OtherImages/TRANSPARENT-SQR.png"></div>
-            <div class="downArrow bounce">
-                <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
-            </div>
+            <h1 class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></h1>
+            <a href="../index.html">HOME</a>
+            <a href="events.html">EVENTS</a>
+            <a href="galleries.html">GALLERIES</a>
+            <a href="artists.html" class="active">ARTISTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+
         </nav>
 
+        <div id="logo"><img id="logoimg" src="../OtherImages/TRANSPARENT-SQR.png"></div>
+        <div class="downArrow bounce">
+            <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+        </div>
+
     </div>
-    <h2>featured events</h2>
     <div class="main-wrapper">
         <div class="wrapper">
 
             <div class="featured-content">
-                <div>
-                    <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
-                    <h3>Explore<p>art art art art art art art art art art art art art art art</p>
-                    </h3>
+                <article class="featured-events">
+                    <h2 class="featured-events-heading">FEATURED EVENTS</h2>
+                    <div class="featured-events-grid">
+                       <template class="event-template">
+                        <div class="one-event">
+                            <img src="">
+                            <p class="AE-type">Event type: <span></span></p>
+                            <p class="AE-name"></p>
+
+                        </div>
+                        </template>
+                    <!--    <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                         <p>art art art art art art art art art art art art art art art</p>
+
+                        </div>
+                            <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                           <p>art art art art art art art art art art art art art art art</p>
+
+                        </div>-->
+                    </div>
+                </article>
+                          <article class="selected-gallery">
+                    <template class="selected-gallery-template">
+                        <div class="selected-gallery-grid">
+
+                            <div class="selected-gallery-text">
+                                <p class="gallery-name">GALLERY NAME</p>
+                                <p class="gallery-style">Hosted at: <a href=""></a></p>
+                                <p class="gallery-start-date">Start date: <span></span></p>
+                                <p class="gallery-end-date">End date: <span></span></p>
+
+
+                            </div>
+
+                            <div class="selected-gallery-photo">
+                                <div class="photo-grid">
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </template>
+
+                </article>
+                <article class="instagram-feed">
+                <h2 class="instagram-feed-heading">INSTAGRAM FEED</h2>
+                <div class="igfeed">
+                    <img src="../OtherImages/igfeed1.png">
+                    <img src="../OtherImages/igfeed2.png">
+                    <img src="../OtherImages/igfeed3.png">
+                    <img src="../OtherImages/igfeed4.png">
+                    <img src="../OtherImages/igfeed5.png">
+                    <img src="../OtherImages/igfeed6.png">
+                    <img src="../OtherImages/igfeed7.png">
+                    <img src="../OtherImages/igfeed8.png">
+
+
                 </div>
+                </article>
+                <article class="featured-galleries">
+                  <h2 class="featured-galleries-heading">FEATURED GALLERIES</h2>
+                    <div class="featured-galleries-grid">
+                        <template class="featured-galleries-template">
+                        <div class="one-gallery">
+                            <img src="">
+                            <p class="gallery-name"></p>
+                            <p class="gallery-style">Hosted at: <a href=""></a></p>
 
-                <img id="fimg2" src="../OtherImages/blank-854880_1920.jpg">
+                        </div>
+                   <!--     <div class="one-gallery">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                            <p>art art art art art art art art art art art art art art art</p>
 
-                <h3>Explore<p>art art art art art artart art art art art art art artart art art art art art art art</p>
-                </h3>
+                        </div>
+                        <div class="one-gallery">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                            <p>art art art art art art art art art art art art art art art</p>
+
+                        </div>-->
+                        </template>
+                    </div>
+                </article>
+
+                      <article class="selected-gallery">
+                    <template class="selected-gallery-template">
+                        <div class="selected-gallery-grid">
+
+                            <div class="selected-gallery-text">
+                                <p class="gallery-name">GALLERY NAME</p>
+                                <p class="gallery-style">Hosted at: <a href=""></a></p>
+                                <p class="gallery-start-date">Start date: <span></span></p>
+                                <p class="gallery-end-date">End date: <span></span></p>
+
+
+                            </div>
+
+                            <div class="selected-gallery-photo">
+                                <div class="photo-grid">
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </template>
+
+                </article>
 
 
             </div>
@@ -50,50 +157,104 @@
                     <div class="add-1"><img src="../OtherImages/ad1.jpg"></div>
                     <div class="add-2"><img src="../OtherImages/ad2.gif"></div>
                     <div class="add-3"><img src="../OtherImages/ad3.gif"></div>
-                    <div class="add-4"><img src="../OtherImages/ad4.gif"></div>
+                    <!--<div class="add-4"><img src="../OtherImages/ad4.gif"></div>-->
                     <div class="add-5"><img src="../OtherImages/ad5.jpg"></div>
                 </div>
             </div>
 
         </div>
     </div>
-    <h2>instagram feed</h2>
-    <div class="igfeed">
-        <img src="../OtherImages/igfeed1.png">
-        <img src="../OtherImages/igfeed2.png">
-        <img src="../OtherImages/igfeed3.png">
-        <img src="../OtherImages/igfeed4.png">
-        <img src="../OtherImages/igfeed5.png">
-        <img src="../OtherImages/igfeed6.png">
-        <img src="../OtherImages/igfeed7.png">
-        <img src="../OtherImages/igfeed8.png">
+
+
+<footer>
+
+    <div class="footer-links-styled">
+      <div class="footer-lists">
+        <div class="footer-list-wrap">
+
+
+            <h6 class="ftr-hdr">About</h6>
+          <ul class="ftr-links-sub">
+            <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">What We Do</a></li>
+            <li><a href="http://corporate.art.com/careers" rel="nofollow">Join The Team</a></li>
+            <li><a href="/asp/landing/artistrising" rel="nofollow">Want To Be Featured?</a></li>
+
+
+
+
+          </ul>
+
+
+
+
+
+
+
+        </div>
+        <!--/.footer-list-wrap-->
+
+
+
+
+        <div class="footer-list-wrap">
+
+         <h6 class="ftr-hdr">Contact</h6>
+          <ul class="ftr-links-sub">
+            <li>kopenhagen@kopenhagen.dk</li>
+            <li>Oehlenschlægersgade 60, 1663 København V</li>
+          </ul>
+
+
+        </div>
+
+      </div>
+      <!--/.footer-lists-->
+      <div class="footer-email">
+        <h6 class="ftr-hdr">Sign up for Event updates</h6>
+        <div id="ftr-email" class="ftr-email-form">
+          <form id="sub-form" method="post" action="http://kopenhagen.dk/">
+                    <input type="text" name="email_address_" id="sub-input-field" class="input" placeholder="Enter email address" />
+            <!--
+                -->
+            <input type="submit" class="button" value="SUBMIT" />
+
+          </form>
+        </div>
+        <!--/.ftr-email-form-->
+
+
+
+      <!--/.footer-email-->
+      <div class="footer-social">
+        <h6 class="ftr-hdr">Follow</h6>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/art.com" title="Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
+              <img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
+            </a>
+          </li>
+
+
+          <li>
+            <a target="_blank" href="http://instagram.com/artdotcom/">
+              <img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
+            </a>
+          </li>
+
+        </ul>
+      </div>
 
 
     </div>
-    <h2>featured galleries</h2>
-    <div class="featured-gallery">
+    <!--/.footer-links-styled-->
+  </div>
+  <!--/.footer-gray-->
 
-        <img id="fimg" src="../OtherImages/gallery.png">
-        <img id="fimg2" src="../OtherImages/AdobeStock_298117627.jpeg">
-        <img id="fimg2" src="../OtherImages/AdobeStock_194946703.jpeg">
-
-
-    </div>
-
-    <footer class="footer">
-        <div class="foot-left">
-            <div class="logo"><img id="logoimg" src="../OtherImages/TRANSPARENT-SQR.png"></div>
-        </div>
-        <div class="foot-right">
-            <ul class="social-foot">
-                <div class="social-foot-icons"><img src="../OtherImages/icons8-facebook-f-384.png"></div>
-                <div class="social-foot-icons"><img src="../OtherImages/icons8-instagram-250.png"></div>
-            </ul>
-        </div>
-
-    </footer>
+</footer>
 
 
     <script src="javascript/script.js"></script>
-</body></html>
+    <script src="javascript/fetchingmain.js"></script>
+</body>
 
+</html>
