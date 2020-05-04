@@ -99,6 +99,7 @@ body {
 .nav-logo {
     padding: 20px 10px 10px 60px;
     margin: 0;
+    margin-top: 18px;
     font-size: 40px;
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
