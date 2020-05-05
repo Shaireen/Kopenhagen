@@ -11,36 +11,36 @@
 </head>
 
 <body>
-       <nav class="nav-wrapper">
-            <h1 class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></h1>
-            <a href="../index.html">HOME</a>
-            <a href="events.html">EVENTS</a>
-            <a href="galleries.html">GALLERIES</a>
-            <a href="artists.html" class="active">ARTISTS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <nav class="nav-wrapper">
+        <h1 class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></h1>
+        <a href="../index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="galleries.html">GALLERIES</a>
+        <a href="artists.html" class="active">ARTISTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
 
-        </nav>
+    </nav>
     <div class="head-imgs">
         <!--   <h2>header image here</h2><img class="head-img-events">-->
     </div>
     <div class="main-wrapper">
         <div class="wrapper">
             <div class="featured-content">
-          <article class="featured-events">
-                    <h2 class="featured-events-heading">FEATURED EVENTS</h2>
+                <article class="featured-events">
+                    <h2 class="featured-events-heading">Featured Events</h2>
                     <div class="featured-events-grid">
-                       <template class="event-template">
-                        <div class="one-event">
-                            <img src="">
-                            <p class="AE-type">Event type: <span></span></p>
-                            <p class="AE-name"></p>
+                        <template class="event-template">
+                            <div class="one-event">
+                                <img src="">
+                                <p class="AE-type">Event type: <span></span></p>
+                                <p class="AE-name"></p>
 
-                        </div>
+                            </div>
                         </template>
-                    <!--    <div class="one-event">
+                        <!--    <div class="one-event">
                             <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
                          <p>art art art art art art art art art art art art art art art</p>
                         </div>
@@ -49,11 +49,25 @@
                            <p>art art art art art art art art art art art art art art art</p>
                         </div>-->
                     </div>
+
+                    <div class="homepage-intro-copy">
+                        <h3 class="intro-head"> some heading </h3>
+                        <div class="intro-body">
+                            <p>events events events events events events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events eventsevents events events events</p>
+                            <a class="intro-link" href="">Explore Art Events Here</a>
+                        </div>
+
+
+                    </div>
+
+
+
+
                 </article>
 
 
-
-                <h2 class="event-specific-letter-heading">SEARCH THROUGH OUR EVENTS AND EXHIBITIONS</h2>
+<div class="search-events">
+                <h3 class="event-specific-letter-heading">SEARCH THROUGH OUR EVENTS AND EXHIBITIONS</h3>
                 <div class="event-sorting-grid">
 
                     <div class="one-event-alphabet">
@@ -61,7 +75,7 @@
 
 
                         <div class="location-filter">
-                           <button class="all">All</button>
+                            <button class="all">All</button>
                             <button data-filter="Copenhagen" class="flbutton">Copenhagen</button>
                             <button data-filter="Aarhus" class="flbutton">Aarhus</button>
                             <button data-filter="Odense" class="flbutton">Odense</button>
@@ -73,7 +87,7 @@
                         <p class="event-description">When would you like to attend?</p>
 
                         <div class="date-filter">
-                           <button class="all">All</button>
+                            <button class="all">All</button>
                             <button id="btn-today">Today</button>
                             <button id="btn-weekend">This weekend</button>
                             <button id="btn-seven">Next 7 days</button>
@@ -81,27 +95,29 @@
 
                     </div>
                 </div>
-
+</div>
 
                 <article class="filter-sorting-event">
-                    <h2 class="all-heading">RESULTS</h2>
+<!--                     <h3 class="all-heading">RESULTS</h3>-->
                     <h2 class="specific-filter-heading"></h2>
                     <div class="filter-grid">
-                       <template class="events-template">
-                        <div class="one-event-filter">
-                            <div class="artist-photo">
-                                <img src="">
+                        <template class="events-template">
+                            <div class="one-event-filter">
+                                <div class="artist-photo">
+                                    <img src="">
+                                </div>
+                                <p class="ev-name"></p>
+                                <p class="s-date">Start date:<span></span></p>
+                                <p class="e-date">End date: <span></span></p>
+                                <p class="desc"></p>
+                                <p class="op-time">Opening time: <span></span></p>
+                                <p class="location">Location:<span></span></p>
                             </div>
-                            <p class="ev-name"></p>
-                            <p class="s-date">Start date:<span></span></p>
-                            <p class="e-date">End date: <span></span></p>
-                            <p class="desc"></p>
-                            <p class="op-time">Opening time: <span></span></p>
-                            <p class="location">Location:<span></span></p>
-                        </div>
                         </template>
 
                     </div>
+
+
                 </article>
 
 
@@ -113,7 +129,7 @@
                     <div class="add-3"><img src="../images/ad3.gif"></div>
                     <div class="add-4"><img src="../images/ad4.gif"></div>
                     <div class="add-5"><img src="../images/ad5.jpg"></div>
-                    <div class="add-6"><img  src="../images/ad6.gif"></div>
+                    <div class="add-6"><img src="../images/ad6.gif"></div>
                 </div>
             </div>
 
@@ -121,92 +137,94 @@
         </div>
     </div>
 
-<footer>
+    <footer>
 
-    <div class="footer-links-styled">
-      <div class="footer-lists">
-        <div class="footer-list-wrap">
-
-
-            <h6 class="ftr-hdr">About</h6>
-          <ul class="ftr-links-sub">
-            <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">What We Do</a></li>
-            <li><a href="http://corporate.art.com/careers" rel="nofollow">Join The Team</a></li>
-            <li><a href="/asp/landing/artistrising" rel="nofollow">Want To Be Featured?</a></li>
+        <div class="footer-links-styled">
+            <div class="footer-lists">
+                <div class="footer-list-wrap">
 
 
+                    <h6 class="ftr-hdr">About</h6>
+                    <ul class="ftr-links-sub">
+                        <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">What We Do</a></li>
+                        <li><a href="http://corporate.art.com/careers" rel="nofollow">Join The Team</a></li>
+                        <li><a href="/asp/landing/artistrising" rel="nofollow">Want To Be Featured?</a></li>
 
 
-          </ul>
 
 
+                    </ul>
 
 
 
 
 
-        </div>
-        <!--/.footer-list-wrap-->
+
+
+                </div>
+                <!--/.footer-list-wrap-->
 
 
 
 
-        <div class="footer-list-wrap">
+                <div class="footer-list-wrap">
 
-         <h6 class="ftr-hdr">Contact</h6>
-          <ul class="ftr-links-sub">
-            <li>kopenhagen@kopenhagen.dk</li>
-            <li>Oehlenschlægersgade 60, 1663 København V</li>
-          </ul>
+                    <h6 class="ftr-hdr">Contact</h6>
+                    <ul class="ftr-links-sub">
+                        <li>kopenhagen@kopenhagen.dk</li>
+                        <li>Oehlenschlægersgade 60, 1663 København V</li>
+                    </ul>
 
 
-        </div>
+                </div>
 
-      </div>
-      <!--/.footer-lists-->
-      <div class="footer-email">
-        <h6 class="ftr-hdr">Sign up for Event updates</h6>
-        <div id="ftr-email" class="ftr-email-form">
-          <form id="sub-form" method="post" action="http://kopenhagen.dk/">
-                    <input type="text" name="email_address_" id="sub-input-field" class="input" placeholder="Enter email address" />
-            <!--
+            </div>
+            <!--/.footer-lists-->
+            <div class="footer-email">
+                <h6 class="ftr-hdr">Sign up for Event updates</h6>
+                <div id="ftr-email" class="ftr-email-form">
+                    <form id="sub-form" method="post" action="http://kopenhagen.dk/">
+                        <input type="text" name="email_address_" id="sub-input-field" class="input" placeholder="Enter email address" />
+                        <!--
                 -->
-            <input type="submit" class="button" value="SUBMIT" />
+                        <input type="submit" class="button" value="SUBMIT" />
 
-          </form>
+                    </form>
+                </div>
+                <!--/.ftr-email-form-->
+
+
+
+                <!--/.footer-email-->
+                <div class="footer-social">
+                    <h6 class="ftr-hdr">Follow</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/art.com" title="Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
+                                <img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a target="_blank" href="http://instagram.com/artdotcom/">
+                                <img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!--/.footer-links-styled-->
         </div>
-        <!--/.ftr-email-form-->
+        <!--/.footer-gray-->
 
-
-
-      <!--/.footer-email-->
-      <div class="footer-social">
-        <h6 class="ftr-hdr">Follow</h6>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/art.com" title="Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
-              <img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
-            </a>
-          </li>
-
-
-          <li>
-            <a target="_blank" href="http://instagram.com/artdotcom/">
-              <img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-
-    </div>
-    <!--/.footer-links-styled-->
-  </div>
-  <!--/.footer-gray-->
-
-</footer>
+    </footer>
 
     <script src="../javascript/script.js"></script>
     <script src="../javascript/calendar.js"></script>
-</body></html>
+</body>
+
+</html>

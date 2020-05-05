@@ -1,4 +1,4 @@
-  * {
+* {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -6,13 +6,49 @@
 
   body {
       margin: 0px 60px;
+      font-family: source-sans-pro, sans-serif;
 
   }
 
-  h1,
-  h2 {
-      font-size: 30px;
-  }
+ h1 {
+     font-size: 2em;
+ }
+
+ h2 {
+     font-size: 1.5em;
+ }
+
+h3 {
+    font-size: 1.17em;
+}
+ p {
+     font-size: 1em;
+      }
+
+
+h1,
+h2,
+h3, featured-artists {
+    text-transform: uppercase;
+}
+
+
+
+/*introduction copy styling*/
+.homepage-intro-copy {
+    padding-top: 10px;
+}
+
+
+.intro-body {
+    column-width: 250px;
+}
+
+.intro-link {
+    justify-content: center;
+}
+
+
 
   .nav-wrapper {
       /*max-width: 1200px;*/
@@ -34,7 +70,7 @@
       font-family: source-sans-pro, sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 25px;
+      font-size: 16px;
       /*     display: grid;
      grid-template-columns: 50% auto;
      justify-items: end;
@@ -166,9 +202,17 @@
 
 /* featured events styling */
 
+
+.search-events {
+    background-color: #F8F8F8;
+    margin: 100px 30px 10px 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+
 .featured-events-heading
  {
-    margin: 50px 30px 30px 10px;
+    margin: 30px 30px 10px 0px;
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
 }
@@ -178,6 +222,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 30px;
+
 }
 
 
@@ -235,6 +280,7 @@
     margin-right: 20px;
     opacity: 0;
     transition: all .5s;
+
 }
 
  .one-event > button:hover {
@@ -244,7 +290,8 @@
 
   .filter-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 600px));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+      justify-content: center;
   }
 
   .one-event {
@@ -284,6 +331,7 @@
   .location-filter,
   .date-filter {
       margin-top: 10px;
+       background-color: #F8F8F8;
   }
 
   .selected-event {
@@ -336,6 +384,7 @@
 
   .event-description {
       font-size: 20px;
+      background-color: #F8F8F8;
   }
 
 
@@ -352,7 +401,7 @@
   }
 
   .one-event-alphabet {
-      background-color: white;
+       background-color: #F8F8F8;
       margin: 20px 20px 0 0;
       display: grid;
       grid-template-rows: auto;
@@ -690,6 +739,7 @@
           .featured-event-grid div {
               justify-items: center;
               margin: 10px;
+
           }
 
           .featured-event-heading,
