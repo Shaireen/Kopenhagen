@@ -13,6 +13,24 @@ body {
 
 }
 
+
+/*text styling*/
+
+h1 {
+    font-size: 32px;
+    }
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+}
+
 #headerimg {
     background-image: url("../images/AdobeStock_303323553.jpeg");
     background-repeat: no-repeat;
@@ -22,7 +40,9 @@ body {
 }
 
 #logoimg {
-    width: 200px;
+    width: 150px;
+    position: relative;
+    top: 8vh;
 }
 
 #logo {
@@ -75,6 +95,7 @@ body {
     text-decoration: none;
     color: black;
     padding: 20px 15px 10px 15px;
+    font-size: 16px;
 
 }
 
@@ -204,8 +225,8 @@ body {
 .featured-content {
     grid-area: featuredMainCon;
     min-height: 500px;
-    margin: 30px 0 30px 0px;
-    padding: 0;
+    margin: 30px 0px 30px;
+    padding: 0px 30px;
 }
 
 /*
@@ -265,7 +286,7 @@ body {
 .featured-galleries-heading,
 .featured-events-heading,
 .instagram-feed-heading {
-    margin: 50px 30px 30px 10px;
+    margin: 50px 30px 10px 0px;
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
 }
@@ -273,7 +294,7 @@ body {
 .featured-galleries-grid,
 .featured-events-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
     grid-gap: 30px;
 }
 
