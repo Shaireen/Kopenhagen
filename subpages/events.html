@@ -11,109 +11,97 @@
 </head>
 
 <body>
-    <nav class="nav-wrapper">
-        <div class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></div>
-        <div class="nav-logo ico"><img src="../images/TRANSPARENT-SQR-BLK.png"></div>
-        <ul class="nav-items">
-            <li class="list-item"><a href="../index.html">Home</a></li>
-            <li class="list-item"><a href="events.html">Events</a></li>
-            <li class="list-item"><a href="galleries.html">Galleries</a></li>
-            <li class="list-item"><a href="artists.html">Artists</a></li>
-            <li class="list-item"><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+       <nav class="nav-wrapper">
+            <h1 class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></h1>
+            <a href="../index.html">HOME</a>
+            <a href="events.html">EVENTS</a>
+            <a href="galleries.html">GALLERIES</a>
+            <a href="artists.html" class="active">ARTISTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </nav>
     <div class="head-imgs">
         <!--   <h2>header image here</h2><img class="head-img-events">-->
     </div>
     <div class="main-wrapper">
         <div class="wrapper">
             <div class="featured-content">
+          <article class="featured-events">
+                    <h2 class="featured-events-heading">FEATURED EVENTS</h2>
+                    <div class="featured-events-grid">
+                       <template class="event-template">
+                        <div class="one-event">
+                            <img src="">
+                            <p class="AE-type">Event type: <span></span></p>
+                            <p class="AE-name"></p>
 
-
-
-                    <h2 class="event-specific-letter-heading">FEATURED EVENTS</h2>
-                    <div class="event-sorting-grid">
-
-                           <div class="one-event-alphabet">
-                             <div class="one-event"><img src="../images/gallery-4644468_1920.jpg">
-                             <p class="event-style">01.05.2020 546 Goldsberg</p>
-                            <p class="event-name">event</p>
                         </div>
-                            <p class="event-description">Explore These are our selected events to guide you through Copenhagen's thrieving art community.</p>
+                        </template>
+                    <!--    <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                         <p>art art art art art art art art art art art art art art art</p>
                         </div>
+                            <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                           <p>art art art art art art art art art art art art art art art</p>
+                        </div>-->
+                    </div>
+                </article>
 
-                        <div class="one-event-alphabet">
-                             <div class="one-event"><img src="../images/architecture-996091_1920%20(1).jpg">
-                            <p class="event-style">01.05.2020 546 Goldsberg</p>
-                            <p class="event-name">event</p>
-                        </div>
-                            <p class="event-description">Explore These are our selected events to guide you through Copenhagen's thrieving art community.</p>
-                        </div>
+
+
+                <h2 class="event-specific-letter-heading">SEARCH THROUGH OUR EVENTS AND EXHIBITIONS</h2>
+                <div class="event-sorting-grid">
+
+                    <div class="one-event-alphabet">
+                        <p class="event-description">Where would you like to see the exhibition?</p>
+
+
+                        <div class="location-filter">
+                           <button class="all">All</button>
+                            <button data-filter="Copenhagen" class="flbutton">Copenhagen</button>
+                            <button data-filter="Aarhus" class="flbutton">Aarhus</button>
+                            <button data-filter="Odense" class="flbutton">Odense</button>
+                            <button data-filter="Aalborg" class="flbutton disabled">Aalborg</button> </div>
 
                     </div>
 
+                    <div class="one-event-alphabet">
+                        <p class="event-description">When would you like to attend?</p>
 
+                        <div class="date-filter">
+                           <button class="all">All</button>
+                            <button id="btn-today">Today</button>
+                            <button id="btn-weekend">This weekend</button>
+                            <button id="btn-seven">Next 7 days</button>
+                            <button id="btn-month">This month</button></div>
 
-                 <h2 class="event-specific-letter-heading">SEARCH THROUGH OUR EVENTS AND EXHIBITIONS</h2>
-                 <div class="event-sorting-grid">
-
-                           <div class="one-event-alphabet">
-                                                    <p class="event-description">Where would you like to see the exhibition?</p>
-
-
-        <ul class="nav-items">
-             <a href=" ">Copenhagen</a>
-             <a href=" ">Aarhus</a>
-            <a href=" ">Odenses</a>
-            <a href=" ">Aalborg</a> </ul>
-
-                        </div>
-
-                        <div class="one-event-alphabet">
-                                                    <p class="event-description">When would you like to attend?</p>
-
-                                     <ul class="nav-items">
-             <a href=" ">Today</a>
-             <a href=" ">This weekend</a>
-            <a href=" ">Next 7 days</a>
-            <a href="">This month</a></ul>
-
-                        </div>
                     </div>
+                </div>
 
 
-
-
-                    <article class="selected-event">
-                    <h2 class="selected-event-heading">HERE ARE YOUR RESULTS:</h2>
-                    <div class="selected-event-grid">
-                        <div class="selected-event-photo">
-                            <img src="../images/painting-1825822_1920%20(1).jpg">
-
+                <article class="filter-sorting-event">
+                    <h2 class="all-heading">RESULTS</h2>
+                    <h2 class="specific-filter-heading"></h2>
+                    <div class="filter-grid">
+                       <template class="events-template">
+                        <div class="one-event-filter">
+                            <div class="artist-photo">
+                                <img src="">
+                            </div>
+                            <p class="ev-name"></p>
+                            <p class="s-date">Start date:<span></span></p>
+                            <p class="e-date">End date: <span></span></p>
+                            <p class="desc"></p>
+                            <p class="op-time">Opening time: <span></span></p>
+                            <p class="location">Location:<span></span></p>
                         </div>
-                         <div class="selected-event-text">
-                            <p class="event-name">AN EVENT NAME </p>
-                            <p class="event-style">29/05/2020 19:00 - 21:00</p>
-                            <p class="event-description">These are our selected events to guide you through Copenhagen's thrieving art community.</p>
-                            <p class="event-description">ADDRESS</p>
+                        </template>
 
-                        </div>
                     </div>
-
-                    <div class="selected-event-grid">
-                        <div class="selected-event-photo">
-                            <img src="../images/AdobeStock_194946703%20(1).jpeg">
-
-                        </div>
-                        <div class="selected-event-text">
-                            <p class="event-name">AN EVENT NAME </p>
-                            <p class="event-style">29/05/2020 19:00 - 21:00</p>
-                            <p class="event-description">These are our selected events to guide you through Copenhagen's thrieving art community.</p>
-                            <p class="event-description">ADDRESS</p>
-
-                        </div>
-                    </div>
-
                 </article>
 
 
@@ -125,13 +113,13 @@
                     <div class="add-3"><img src="../images/ad3.gif"></div>
                     <div class="add-4"><img src="../images/ad4.gif"></div>
                     <div class="add-5"><img src="../images/ad5.jpg"></div>
+                    <div class="add-6"><img  src="../images/ad6.gif"></div>
                 </div>
             </div>
 
 
         </div>
     </div>
-
 
 <footer>
 
@@ -220,4 +208,5 @@
 </footer>
 
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/calendar.js"></script>
 </body></html>
