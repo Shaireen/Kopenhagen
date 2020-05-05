@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
@@ -17,21 +17,46 @@ body {
 /*text styling*/
 
 h1 {
-    font-size: 32px;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
 p {
     font-size: 16px;
 }
+
+/*introduction copy styling*/
+.homepage-intro-copy {
+    padding-top: 10px;
+}
+
+
+.intro-body {
+    column-width: 250px;
+}
+
+.intro-link {
+    justify-content: center;
+}
+
 
 #headerimg {
     background-image: url("../images/AdobeStock_303323553.jpeg");
@@ -226,9 +251,9 @@ p {
 
 .featured-content {
     grid-area: featuredMainCon;
-    min-height: 500px;
-    margin: 30px ;
-    padding: 0px;
+    min-height: 00px;
+
+    padding-bottom: 60px;
 }
 
 /*
@@ -261,8 +286,7 @@ p {
 
 .instagram-feed {
     background-color: #f8f8f8;
-    padding: 0px 0px 30px;
-    margin: 30px
+
 }
 
 
@@ -273,8 +297,6 @@ p {
 
 .aside-ads {
     grid-area: asideAds;
-
-
 }
 
 .aside-ads img {
@@ -282,11 +304,8 @@ p {
 }
 
 
-
 .aside-ads-container > div {
-    margin: 0px;
-
-
+    margin-left: 10px;
 }
 
 /* featured artists styling */
@@ -294,7 +313,6 @@ p {
 .featured-events-heading,
 .instagram-feed-heading {
     margin: 50px 0px 0px 0px;
-    font-family: acumin-pro, sans-serif;
     font-weight: 700;
 }
 
@@ -308,11 +326,13 @@ p {
 
 .one-gallery,
 .one-event {
+    margin: 0 30px 0 0;
     position: relative;
     font-family: source-sans-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 25px;
+    align-items: center;
 
 
 }
@@ -320,12 +340,12 @@ p {
 .one-gallery img,
 .one-event img {
     max-width: 100%;
-    transition: .5s ease-in-out all;
+    transition: .2s ease-in-out all;
 }
 
 .one-event:hover img,
 .one-gallery:hover img {
-    opacity: 0.5;
+    filter: brightness(40%);
 }
 
 .one-event:hover > p,
@@ -333,6 +353,8 @@ p {
 .one-gallery:hover > p,
 .one-gallery:hover > button {
     opacity: 1;
+    cursor: pointer;
+    color: white;
 }
 
 .one-event > p,
@@ -351,24 +373,24 @@ p {
 .one-gallery > button,
 .one-event > button {
     position: absolute;
-    background: white;
-    border: 1px solid black;
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 400;
+    background: black;
+    border: none;
+    justify-content: flex-start;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
     top: 70%;
-    right: 0;
+    right: 0%;
     margin-right: 20px;
     opacity: 0;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 .one-gallery > button:hover,
 .one-event > button:hover {
     background-color: #e75d40;
     color: white;
+    cursor: pointer;
 }
 
 /* selected gallery styling */
