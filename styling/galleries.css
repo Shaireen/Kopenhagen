@@ -176,7 +176,7 @@ h3, featured-galleries {
  /* featured artists styling */
  .featured-galleries-heading {
      margin: 0px 30px 10px 0;
-     font-family: acumin-pro, sans-serif;
+    font-family: acumin-pro, sans-serif;
      font-weight: 700;
  }
 
@@ -191,12 +191,11 @@ h3, featured-galleries {
  }
 
  .one-gallery {
-     margin: 0 30px 0 0;
+     margin: 0 30px 30px 0;
      position: relative;
      font-family: source-sans-pro, sans-serif;
      font-weight: 300;
      font-style: normal;
-     font-size: 25px;
      align-items: center;
 
  }
