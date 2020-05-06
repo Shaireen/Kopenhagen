@@ -4,55 +4,231 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Events</title>
     <link rel="stylesheet" href="../styling/events.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gyu0jeo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+
 </head>
 
 <body>
     <nav class="nav-wrapper">
-        <div class="nav-logo">Copenhagen Artguide</div>
-        <ul class="nav-items">
-            <li class="list-item"><a href="../index.html">Home</a></li>
-            <li class="list-item"><a href="events.html">Events</a></li>
-            <li class="list-item"><a href="galleries.html">Galleries</a></li>
-            <li class="list-item"><a href="artists.html">Artists</a></li>
-            <li class="list-item"><a href="about.html">About</a></li>
-        </ul>
+        <h1 class="nav-logo">KOPENHAGEN <span>ARTGUIDE</span></h1>
+        <a href="../index.html">HOME</a>
+        <a href="events.html" class="active">EVENTS</a>
+        <a href="galleries.html">GALLERIES</a>
+        <a href="artists.html">ARTISTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
 
     </nav>
-<div class="head-imgs"><h2>header image here</h2><img class="head-img-events"></div>
+    <div class="head-imgs">
+        <div id="logo"><img id="logoimg" src="../images/new-logo-black.png"></div>
+    </div>
     <div class="main-wrapper">
         <div class="wrapper">
             <div class="featured-content">
-                the main content goes here
+                <article class="featured-events">
+                    <h1 class="featured-events-heading">Featured Events</h1>
+                    <div class="featured-events-grid">
+                        <template class="event-template">
+                            <div class="one-event">
+                                <img src="">
+                                <p class="AE-type">Event type: <span></span></p>
+                                <p class="AE-name"></p>
+
+                            </div>
+                        </template>
+                        <!--    <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                         <p>art art art art art art art art art art art art art art art</p>
+                        </div>
+                            <div class="one-event">
+                            <img id="fimg" src="../OtherImages/architecture-996091_1920.jpg">
+                           <p>art art art art art art art art art art art art art art art</p>
+                        </div>-->
+                    </div>
+
+                    <div class="homepage-intro-copy">
+                        <h3 class="intro-head"> Discover A Variety of Events </h3>
+                        <div class="intro-body">
+                            <p>We have many events featured on our platform, aswell as providing our recommendations - for inspiration. <br>Explore the regional art scene, upcoming artists, or visit our local progressive gallery spaces and enjoy our historical institutions blow.</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </article>
+
+
+                <div class="search-events">
+                    <h3 class="event-specific-letter-heading">SEARCH THROUGH OUR EVENTS AND EXHIBITIONS</h3>
+                    <div class="event-sorting-grid">
+
+                        <div class="one-event-alphabet">
+                            <p class="event-description">Where would you like to see the exhibition?</p>
+
+
+                            <div class="location-filter">
+                                <button class="all">All</button>
+                                <button data-filter="Copenhagen" class="flbutton">Copenhagen</button>
+                                <button data-filter="Aarhus" class="flbutton">Aarhus</button>
+                                <button data-filter="Odense" class="flbutton">Odense</button>
+                                <button data-filter="Aalborg" class="flbutton disabled">Aalborg</button> </div>
+
+                        </div>
+
+                        <div class="one-event-alphabet">
+                            <p class="event-description">When would you like to attend?</p>
+
+                            <div class="date-filter">
+                                <button class="all">All</button>
+                                <button id="btn-today">Today</button>
+                                <button id="btn-weekend">This weekend</button>
+                                <button id="btn-seven">Next 7 days</button>
+                                <button id="btn-month">This month</button></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <article class="filter-sorting-event">
+                    <!--                     <h3 class="all-heading">RESULTS</h3>-->
+                    <h2 class="specific-filter-heading"></h2>
+                    <div class="filter-grid">
+                        <template class="events-template">
+                            <div class="one-event-filter">
+                                <div class="artist-photo">
+                                    <img src="">
+                                </div>
+                                <h3 class="ev-name"></h3>
+                                <p class="s-date">Start date: <span></span></p>
+                                <p class="e-date">End date: <span></span></p>
+                                <p class="desc"></p>
+                                <p class="op-time">Opening time: <span></span></p>
+                                <p class="location">Location: <span></span></p>
+                            </div>
+                        </template>
+
+                    </div>
+
+
+                </article>
+
+
             </div>
             <div class="aside-ads">
-                <div class="add-1">an add image</div>
-                <div class="add-2">an add image</div>
-                <div class="add-3">an add image</div>
+                <div class="aside-ads-container">
+                    <div class="add-1"><img src="../images/ad1.jpg"></div>
+                    <div class="add-2"><img src="../images/ad2.gif"></div>
+                    <div class="add-3"><img src="../images/ad3.gif"></div>
+                    <div class="add-4"><img src="../images/ad4.gif"></div>
+                    <div class="add-5"><img src="../images/ad5.jpg"></div>
+                    <div class="add-6"><img src="../images/ad6.gif"></div>
+                </div>
             </div>
 
 
         </div>
     </div>
 
+    <footer>
 
-    <footer class="footer">
-        <div class="foot-left">
-            <div class="logo">
-                <h2>logo will go here</h2>
+        <div class="footer-links-styled">
+            <div class="footer-lists">
+                <div class="footer-list-wrap">
+
+
+                    <h6 class="ftr-hdr">About</h6>
+                    <ul class="ftr-links-sub">
+                        <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">What We Do</a></li>
+                        <li><a href="http://corporate.art.com/careers" rel="nofollow">Join The Team</a></li>
+                        <li><a href="/asp/landing/artistrising" rel="nofollow">Want To Be Featured?</a></li>
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+
+                </div>
+                <!--/.footer-list-wrap-->
+
+
+
+
+                <div class="footer-list-wrap">
+
+                    <h6 class="ftr-hdr">Contact</h6>
+                    <ul class="ftr-links-sub">
+                        <li>kopenhagen@kopenhagen.dk</li>
+                        <li>Oehlenschlægersgade 60, 1663 København V</li>
+                    </ul>
+
+
+                </div>
+
             </div>
+            <!--/.footer-lists-->
+            <div class="footer-email">
+                <h6 class="ftr-hdr">Sign up for Event updates</h6>
+                <div id="ftr-email" class="ftr-email-form">
+                    <form id="sub-form" method="post" action="http://kopenhagen.dk/">
+                        <input type="text" name="email_address_" id="sub-input-field" class="input" placeholder="Enter email address" />
+                        <!--
+                -->
+                        <input type="submit" class="button" value="SUBMIT" />
+
+                    </form>
+                </div>
+                <!--/.ftr-email-form-->
+
+
+
+                <!--/.footer-email-->
+                <div class="footer-social">
+                    <h6 class="ftr-hdr">Follow</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/art.com" title="Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
+                                <img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a target="_blank" href="http://instagram.com/artdotcom/">
+                                <img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!--/.footer-links-styled-->
         </div>
-        <div class="foot-right">
-            <ul class="social-foot">
-                <li class="social-foot-icons">icon</li>
-                <li class="social-foot-icons">icon</li>
-                <li class="social-foot-icons">icon</li>
-            </ul>
-        </div>
+        <!--/.footer-gray-->
 
     </footer>
 
-
     <script src="../javascript/script.js"></script>
-</body></html>
+    <script src="../javascript/calendar.js"></script>
+</body>
+
+</html>

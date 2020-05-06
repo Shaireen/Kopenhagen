@@ -31,6 +31,7 @@ function showData(showGalleries) {
             // creating a button for each of featured gallery and giving it data-filter attribute with id of specific photogallery
             const buttonRead = document.createElement("button");
             buttonRead.setAttribute("data-filter", oneGallery.id);
+            buttonRead.disabled = true;
             buttonRead.classList.add("featured-gallery-button");
             buttonRead.textContent = "See more...";
             clone.querySelector(".one-gallery").appendChild(buttonRead);
@@ -111,6 +112,7 @@ function showData2(showArtEvents) {
             // creating a button for each of featured gallery and giving it data-filter attribute with id of specific photogallery
             const buttonRead = document.createElement("button");
             buttonRead.setAttribute("data-filter", oneAE.id);
+            buttonRead.disabled = true;
             buttonRead.classList.add("featured-AE-button");
             buttonRead.textContent = "See more...";
             clone2.querySelector(".one-event").appendChild(buttonRead);

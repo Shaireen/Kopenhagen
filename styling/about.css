@@ -172,12 +172,13 @@ body {
     margin: 0;
     font-size: 40px;
     position: absolute;
+    font-family: acumin-pro, sans-serif;
     left: 0;
-    line-height: 0.7;
+    line-height: 0.5;
 }
 
 .nav-logo > span {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #e75d40;
@@ -200,6 +201,7 @@ h1 {
     padding: 0;
     font-weight: 700;
     text-transform: uppercase;
+    font-family: acumin-pro, sans-serif;
 
 }
 
@@ -208,12 +210,14 @@ h1 {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
+    font-family: acumin-pro, sans-serif;
 }
 
 h3 {
     font-size: 18.72px;
     text-transform: uppercase;
     color: #DC4333;
+    font-family: acumin-pro, sans-serif;
 }
 
 
@@ -222,13 +226,14 @@ p {
     font-size: 16x;
     margin: 0;
     padding: 10px;
+    font-weight: 300;
 }
 
 /*main content styling*/
 .main-wrapper {
-    max-width: 1200px;
     width: auto;
     margin: auto;
+    padding-top: 30px;
 }
 
 
@@ -291,6 +296,7 @@ p {
 .layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    font-family: source-sans-pro, sans-serif;
     margin-bottom: 50px;
     background: #f8f8f8;
 }
@@ -353,15 +359,18 @@ p {
 */
 
 /*setting grid layout for page*/
-.wrapper {
-    max-width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 200px;
-    grid-template-areas:
-        "featuredMainCon featuredMainCon asideAds"
+ .wrapper {
+     width: 100%;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
 
-}
+     grid-template-areas:
+         "headerImages headerImages headerImages headerImages headerImages headerImages"
+         "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon asideAds"
+
+ }
+
 
 .featured-content {
     grid-area: featuredMainCon;
@@ -370,25 +379,15 @@ p {
 
 }
 
-.aside-ads {
-    grid-area: asideAds;
-    display: grid;
-    margin: 30px 0px;
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
+ .aside-ads {
+     grid-area: asideAds;
+ }
 
-}
+ .aside-ads img {
+     max-width: 100%;
+ }
 
 
-/*where the adds will go*/
-.aside-ads img {
-    max-width: 100%;
-
-}
-
-.aside-ads-container > div {
-    margin: 10px 0;
-}
 
 /*footer sits outside overall grid layout*/
 
@@ -632,14 +631,17 @@ footer {
 /*wide screen */
 @media screen and (min-width: 1215px) {
     .aside-ads-container {
-        display: grid;
-        grid-template-rows: repeat(auto-fit);
-        margin-top: 80px;
-        justify-items: end;
-        position: sticky;
-        top: 0;
+         display: grid;
+         grid-template-rows: repeat(auto-fit);
+         justify-items: end;
+         margin-top: 80px;
+         position: sticky;
+         top: 0;
+     }
 
-    }
+     .aside-ads-container > div {
+     margin: 10px 0 10px 30px;
+ }
 
 }
 
@@ -647,11 +649,11 @@ footer {
 /*tablet*/
 
 @media screen and (max-width: 1215px) {
-    .wrapper {
-        grid-template-areas:
-            "featuredMainCon featuredMainCon featuredMainCon"
-            "asideAds asideAds asideAds"
-    }
+ .wrapper {
+         grid-template-areas:
+             "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon"
+             "asideAds asideAds asideAds asideAds asideAds asideAds"
+     }
 
     .featured-content {
         margin: 10px;
@@ -706,14 +708,15 @@ footer {
         flex: 1;
     }
 
-    .aside-ads-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        margin: 20px 0;
-        align-items: center;
-        justify-items: center;
-        position: static;
-    }
+   .aside-ads-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         margin: 20px 0;
+         align-items: center;
+         justify-items: center;
+         position: static;
+         grid-gap: 15px;
+     }
 
 }
 
@@ -813,9 +816,13 @@ footer {
             padding: 0px 10px;
         }
 
-        .nav-wrapper.responsive a.icon {
-            padding-right: 25px;
-        }
+         .nav-wrapper.responsive a.icon {
+              padding-right: 45px;
+          }
+
+          .nav-wrapper a.icon {
+              padding-right: 35px;
+          }
 
         .downArrow {
 
