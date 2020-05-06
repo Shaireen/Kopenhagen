@@ -689,7 +689,7 @@ h3, featured-artists {
 
   /* fade in effect */
   .fade-in {
-      animation: fadeIn ease-in 1s;
+      animation: fadeIn ease-in 0.2s;
 
   }
 
