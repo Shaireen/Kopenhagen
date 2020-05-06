@@ -2,10 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+
+/*animations */
+
+/*logo*/
+
+
+
+
+
+
 
 
 body {
@@ -37,10 +48,12 @@ h2,
 h3,
 h4 {
     text-transform: uppercase;
+    font-family: source-sans-pro, sans-serif;
 }
 
 p {
     font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*introduction copy styling*/
@@ -166,7 +179,7 @@ p {
     padding: 20px 10px 10px 60px;
     margin: 0;
     font-size: 40px;
-    font-family: acumin-pro, sans-serif;
+    font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     position: absolute;
     left: 0;
@@ -256,21 +269,6 @@ p {
     padding-bottom: 60px;
 }
 
-/*
-.featured-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    grid-area: featuredMainCon;
-    min-height: 500px;
-    margin: 30px 0 30px 0px;
-    padding: 0;
-    grid-gap: 30px;
-}
-
-.featured-gallery img {
-    width: 100%;
-    height: 273px
-}*/
 
 .igfeed {
     display: grid;
@@ -289,6 +287,9 @@ p {
 
 }
 
+.instagram-feed-heading {
+    color: #DC4333;
+}
 
 
 
@@ -707,9 +708,7 @@ footer {
  }
 */
 
-.logo {
-    width: 6%;
-}
+
 
 .social-foot-icons img {
     display: flex;
@@ -757,11 +756,12 @@ footer {
     }
 
     body {
-        margin: 0px 10px;
+        margin: 0px 60px;
     }
 
     .nav-logo {
         display: none;
+
     }
 
     .nav-wrapper {

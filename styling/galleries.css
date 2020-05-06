@@ -145,14 +145,24 @@ h3, featured-galleries {
 
 
 
+
+
  .head-imgs {
      grid-area: headerImages;
      margin-top: 70px;
      height: 40vh;
-     background-image: url("../images/galleryheader.jpeg");
+     background-image: url("../images/architecture-996091_1920.jpg");
      background-repeat: no-repeat;
      background-size: cover;
+     background-position: center;
+
  }
+
+
+.homepage-intro-copy {
+    margin: 10px 30px 0px 0px ;
+    padding: 0px;
+}
 
  .wrapper {
      max-width: 100%;
@@ -188,6 +198,7 @@ h3, featured-galleries {
  .galleries-sorting-grid {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
+     justify-content: center;
  }
 
  .one-gallery {
@@ -378,7 +389,8 @@ h3, featured-galleries {
      font-weight: 700;
      margin: 60px 0px 30px;
      border-top: solid black;
- }
+     color: #DC4333;
+}
 
  .gallery-specific-letter-heading {
      margin-top: 40px;
@@ -481,7 +493,7 @@ h3, featured-galleries {
      clear: both;
      content: "";
  }
-
+/*footer media queries*/
  @media only screen and (min-width: 768px) {
 
      .footer-links-styled a,
@@ -533,7 +545,6 @@ h3, featured-galleries {
      padding: 3px 0;
      color: #888;
 
-     /*width: 150px;*/
  }
 
  .footer-links-styled a,
@@ -597,7 +608,6 @@ h3, featured-galleries {
  #sub-form .button:hover,
  #sub-form .button:active {
      background-color: gainsboro;
-     color: black;
      outline: none;
      cursor: pointer;
  }
@@ -627,7 +637,7 @@ h3, featured-galleries {
      padding: 0;
  }
 
- /*footer media q*/
+
 
  @media only screen and (min-width: 768px) {
      .footer-lists {
@@ -684,6 +694,10 @@ h3, featured-galleries {
          display: none;
      }
 
+     #logo {
+         display: none;
+     }
+
  }
 
  /*tablet media quieres*/
@@ -694,6 +708,33 @@ h3, featured-galleries {
              "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon"
              "asideAds asideAds asideAds asideAds asideAds asideAds"
      }
+
+
+
+
+/*     logo appear on smaller screens*/
+
+#logoimg {
+
+  width: 150px;
+    position: relative;
+
+}
+
+#logo {
+
+    top: 35%;
+    left: 55%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    z-index: 4;
+    position: absolute;
+    /*  margin: 0 auto;
+    left: 0;
+    right: 0;*/
+}
+
 
      .aside-ads-container {
          display: grid;

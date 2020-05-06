@@ -29,6 +29,10 @@ h3, featured-artists {
     text-transform: uppercase;
 }
 
+.artist-style {
+    font-weight: 500;
+}
+
 
 /*introduction copy styling*/
 .homepage-intro-copy {
@@ -323,6 +327,7 @@ h3, featured-artists {
      font-weight: 700;
      border-top: solid black;
      margin: 0px 30px 30px 0px;
+     color: #DC4333;
  }
 
  .artist-specific-letter-heading {
@@ -565,7 +570,6 @@ footer {
     padding: 0;
 }
 
-/*footer media q*/
 
 @media only screen and (min-width: 768px) {
     .footer-lists {
@@ -621,6 +625,10 @@ footer {
          display: none;
      }
 
+     #logo {
+         display: none;
+     }
+
  }
 
  /*tablet media quieres*/
@@ -640,6 +648,31 @@ footer {
          justify-items: center;
          position: static;
      }
+
+
+/*     logo appear on smaller screens*/
+#logoimg {
+
+  width: 150px;
+    position: relative;
+
+}
+
+#logo {
+
+    top: 35%;
+    left: 55%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    z-index: 4;
+    position: absolute;
+    /*  margin: 0 auto;
+    left: 0;
+    right: 0;*/
+}
+
+
 
      .featured-artists-grid div {
          justify-items: center;
@@ -749,43 +782,3 @@ footer {
  }
 
 
- /*mobile*/
-
- /*
- @media screen and (max-width: 690px) {
-     .nav-logo {
-         grid-column: 1/5;
-         text-align: center;
-
-     }
-
-     .nav-items {
-         grid-column: 1/5;
-         text-align: center;
-         position: relative;
-         bottom: 0%;
-     }
-
-
-     .nav-wrapper {
-         padding-bottom: px;
-     }
-
-     .nav-wrapper ul li {
-         display: block;
-         padding: 10px;
-     }
-
-     .aside-ads {
-         grid-template-columns: 1fr;
-         margin-top: 0;
-     }
-
-     .footer > div {
-         grid-column: 1/5;
-         text-align: center;
-
-     }
-
- }
-*/
