@@ -251,21 +251,12 @@ a {
     transition: .5s ease-in-out all;
 }
 
-.one-event:hover img {
-    opacity: 0.5;
-}
 
 .one-event:hover > p,
 .one-event:hover > button {
     opacity: 1;
 }
 
-.one-event > p {
-    position: absolute;
-    top: 0;
-    padding: 20px;
-    opacity: 0;
-}
 
 .one-event p:nth-child(2) {
     top: 30%;
@@ -352,7 +343,6 @@ a {
     position: absolute;
     top: 0;
     padding: 20px;
-    font-size: 20px;
     opacity: 0;
     color: white;
 }
