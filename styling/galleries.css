@@ -37,7 +37,7 @@ h3, featured-galleries {
 
 
 .intro-body {
-    column-width: 250px;
+    max-width: 38em;
 }
 
 .intro-link {
@@ -160,7 +160,8 @@ h3, featured-galleries {
 
 
 .homepage-intro-copy {
-    margin: 10px 30px 0px 0px ;
+    margin: auto;
+    max-width: 38em;
     padding: 0px;
 }
 
@@ -680,7 +681,7 @@ h3, featured-galleries {
 
  /*large screens*/
 
- @media screen and (min-width: 1150px) {
+ @media screen and (min-width: 1215px) {
      .aside-ads-container {
          display: grid;
          grid-template-rows: repeat(auto-fit);
@@ -702,7 +703,7 @@ h3, featured-galleries {
 
  /*tablet media quieres*/
 
- @media screen and (max-width: 1150px) {
+ @media screen and (max-width: 1215px) {
      .wrapper {
          grid-template-areas:
              "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon"
@@ -715,18 +716,14 @@ h3, featured-galleries {
 /*     logo appear on smaller screens*/
 
 #logoimg {
-
-  width: 150px;
-    position: relative;
-
+    width: 140px;
 }
 
 #logo {
-
-    top: 35%;
-    left: 55%;
-    margin-top: -100px;
-    margin-left: -100px;
+    top: 30%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
     width: 200px;
     z-index: 4;
     position: absolute;
@@ -734,7 +731,6 @@ h3, featured-galleries {
     left: 0;
     right: 0;*/
 }
-
 
      .aside-ads-container {
          display: grid;
@@ -786,6 +782,10 @@ h3, featured-galleries {
 
      }
 
+     .nav-wrapper a:hover {
+         line-height: normal;
+     }
+
      .nav-wrapper a {
          display: none;
      }
@@ -818,7 +818,7 @@ h3, featured-galleries {
 
  /* icon position */
 
- @media screen and (max-width: 1150px) and (min-width: 450px) {
+ @media screen and (max-width: 1215px) and (min-width: 450px) {
      .nav-wrapper.responsive a.icon {
          padding-right: 75px;
      }

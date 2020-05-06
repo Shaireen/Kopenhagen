@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
@@ -30,7 +32,7 @@ body {
 .downArrow {
     position: absolute;
     top: 90vh;
-    left: 50%;
+    left: 49%;
     grid-column: 1/-1;
     color: white;
     animation: bounce 2s infinite;
@@ -68,16 +70,17 @@ body {
 }
 
 #logoimg {
-    width: 150px;
-    position: relative;
+    width: 200px;
 }
 
 #logo {
     top: 50%;
-    left: 45%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
     width: 200px;
     z-index: 4;
-    position: relative;
+    position: absolute;
     /*  margin: 0 auto;
     left: 0;
     right: 0;*/
@@ -174,8 +177,7 @@ body {
 }
 
 .nav-logo > span {
-    font-family: source-sans-pro, sans-serif;
-        font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #e75d40;
@@ -286,6 +288,22 @@ p {
 
 /*body text layout*/
 
+.layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    margin-bottom: 50px;
+    background: #f8f8f8;
+}
+
+.layout > img {
+    max-width: 100%;
+}
+
+.col-body, .col-head {
+    padding: 10px;
+}
+
+/*
 .col.col-body,
 .col.col-head {
     margin: 0;
@@ -332,6 +350,7 @@ p {
     margin: 0 2px 2px 0;
 
 }
+*/
 
 /*setting grid layout for page*/
 .wrapper {
@@ -339,8 +358,6 @@ p {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 200px;
-    grid-template-rows: 1200px;
-
     grid-template-areas:
         "featuredMainCon featuredMainCon asideAds"
 
@@ -386,6 +403,7 @@ p {
 footer {
     background-color: #1F2D2E;
     width: 100%;
+    font-family: source-sans-pro, sans-serif;
 
 }
 
@@ -409,6 +427,16 @@ footer {
     content: "";
 }
 
+@media only screen and (min-width: 768px) {
+
+    .footer-links-styled a,
+    .footer-links-styled a:link,
+    .footer-links-styled a:visited,
+    .ftr-links-sub li .link {
+        padding: 0;
+    }
+}
+
 /*footer header text*/
 .ftr-hdr {
     color: white;
@@ -418,6 +446,11 @@ footer {
     font-size: 18px;
 }
 
+.footer-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+}
 
 .footer-list-wrap {
     width: 50%;
@@ -466,16 +499,6 @@ footer {
     text-decoration: underline;
     color: white;
     cursor: pointer;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .footer-links-styled a,
-    .footer-links-styled a:link,
-    .footer-links-styled a:visited,
-    .ftr-links-sub li .link {
-        padding: 0;
-    }
 }
 
 /* subscrption box styling*/
@@ -587,15 +610,27 @@ footer {
 }
 
 
+/*
+ .foot-right ul li {
+     display: grid;
+     grid-template-columns: repeat (auto-fit, minmax(1fr, 1fr))
+ }
+*/
 
 
 
+.social-foot-icons img {
+    display: flex;
+    flex-direction: row;
+    width: 8%;
+    height: 8%;
+}
 
 /*Rest of page media queries*/
 
 
 /*wide screen */
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1215px) {
     .aside-ads-container {
         display: grid;
         grid-template-rows: repeat(auto-fit);
@@ -611,11 +646,15 @@ footer {
 
 /*tablet*/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1215px) {
     .wrapper {
         grid-template-areas:
             "featuredMainCon featuredMainCon featuredMainCon"
             "asideAds asideAds asideAds"
+    }
+
+    .featured-content {
+        margin: 10px;
     }
 
 
@@ -633,6 +672,14 @@ footer {
     .nav-wrapper a {
         display: none;
     }
+
+
+.nav-wrapper a:hover {
+    color: #e75d40;
+    border-bottom: 2px solid #e75d40;
+    line-height:normal;
+}
+
 
     .nav-wrapper a.icon {
         float: right;

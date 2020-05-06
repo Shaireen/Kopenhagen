@@ -37,11 +37,13 @@ h3, featured-artists {
 /*introduction copy styling*/
 .homepage-intro-copy {
     padding-top: 10px;
+    max-width: 38em;
+    margin: auto;
 }
 
 
 .intro-body {
-    column-width: 250px;
+    max-width: 38em;
 }
 
 .intro-link {
@@ -291,6 +293,7 @@ h3, featured-artists {
  .artist-name,
  .artist-contact {
      font-weight: 600;
+     padding: 10px;
  }
 
  .artist-description {
@@ -611,7 +614,7 @@ footer {
 
  /*large screens*/
 
- @media screen and (min-width: 1150px) {
+ @media screen and (min-width: 1215px) {
      .aside-ads-container {
          display: grid;
          grid-template-rows: repeat(auto-fit);
@@ -633,7 +636,7 @@ footer {
 
  /*tablet media quieres*/
 
- @media screen and (max-width: 1150px) {
+ @media screen and (max-width: 1215px) {
      .wrapper {
          grid-template-areas:
              "featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon featuredMainCon"
@@ -652,18 +655,14 @@ footer {
 
 /*     logo appear on smaller screens*/
 #logoimg {
-
-  width: 150px;
-    position: relative;
-
+    width: 140px;
 }
 
 #logo {
-
-    top: 35%;
-    left: 55%;
-    margin-top: -100px;
-    margin-left: -100px;
+    top: 30%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
     width: 200px;
     z-index: 4;
     position: absolute;
@@ -718,6 +717,10 @@ footer {
        display: none;
             }
 
+     .nav-wrapper a:hover {
+         line-height: normal
+     }
+
      .nav-wrapper a.icon {
          float: right;
          display: block;
@@ -746,7 +749,7 @@ footer {
 
  /* icon position */
 
- @media screen and (max-width: 1150px) and (min-width: 450px) {
+ @media screen and (max-width: 1215px) and (min-width: 450px) {
      .nav-wrapper.responsive a.icon {
          padding-right: 75px;
      }
